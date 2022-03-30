@@ -18,8 +18,9 @@ public class Hello extends HttpServlet {
         out.println("<HTML>");
         out.println("<HEAD><TITLE>Hello, " + name + "</TITLE></HEAD>");
         out.println("<BODY>");
-        out.println("Hello, " + name);
+        out.println("<h1>Hello, " + name + "</h1>");
         out.println("</BODY></HTML>");
+
     }
 
     public String getServletInfo() {
