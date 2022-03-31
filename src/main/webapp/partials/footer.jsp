@@ -22,19 +22,26 @@
         margin-bottom: -50px;
         text-transform: uppercase;
         background: #007b5e !important;
+        box-shadow:0 12px 15px 0 rgba(0,0,0,.24),0 17px 50px 0 rgba(0,0,0,.19);
+
     }
-    #footer h5{
+    #footer h5 {
         padding-left: 10px;
         border-left: 3px solid #eeeeee;
         padding-bottom: 6px;
         margin-bottom: 20px;
-        color:#ffffff;
+        color: #ffffff;
+    }
+
+    #footer p.h6{
+        font-family: 'Press Start 2P', cursive;
     }
     #footer a {
         color: #ffffff;
         text-decoration: none !important;
         background-color: transparent;
         -webkit-text-decoration-skip: objects;
+        font-family: 'Press Start 2P', cursive;
     }
     #footer ul.social li{
         padding: -1px;

@@ -16,7 +16,6 @@
     body {
         margin:0;
         color:#edf3ff;
-
         font:600 16px/18px 'Open Sans',sans-serif;
     }
     :after,:before{box-sizing:border-box}
@@ -24,13 +23,13 @@
     .clearfix:after{clear:both;display:block}
     a{color:inherit;text-decoration:none}
     .login-wrap{
+        background-color: rgb(2, 245, 195);
         width: 100%;
         margin:auto;
-        max-width:510px;
+        /*max-width:510px;*/
         min-height:510px;
         position:relative;
-
-        box-shadow:0 12px 15px 0 rgba(0,0,0,.24),0 17px 50px 0 rgba(0,0,0,.19);
+        /*box-shadow:0 12px 15px 0 rgba(0,0,0,.24),0 17px 50px 0 rgba(0,0,0,.19);*/
     }
     .login-html{
         width:100%;
@@ -98,7 +97,7 @@
         border:none;
         padding:15px 20px;
         border-radius:25px;
-        background:rgba(255,255,255,.1);
+        background: rgb(255, 255, 255);
     }
     .login-form .group input[data-type="password"]{
         text-security:circle;
@@ -117,7 +116,7 @@
         border-radius:2px;
         position:relative;
         display:inline-block;
-        background:rgba(255,255,255,.1);
+        background: rgba(255, 255, 255, 0.98);
     }
     .login-form .group label .icon:before,
     .login-form .group label .icon:after{
@@ -167,7 +166,7 @@
     .hr{
         height:2px;
         margin:60px 0 50px 0;
-        background:rgba(255,255,255,.2);
+        color: #007b5e;
     }
     .foot-lnk{
         text-align:center;

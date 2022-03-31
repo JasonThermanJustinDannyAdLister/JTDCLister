@@ -8,6 +8,7 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <!DOCTYPE html>
+
 <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -15,14 +16,19 @@
 
 <style>
     @import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+    @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
     #navbar{
         padding:1px;
         text-align: center;
         color: #007b5e;
-        margin-bottom: 10px;
+        /*margin-bottom: 10px;*/
         text-transform: uppercase;
-        background-color: #007b5e ;
+        background-color: #007b5e;
     }
+    #navbar .navbar-brand{
+        font-family: 'Press Start 2P', cursive;
+    }
+
     .navbar-collapse{
         text-align: center;
         text-transform: uppercase;
@@ -39,7 +45,15 @@
         border:0;
     }
     #navbar .nav-item a{
+        font-family: 'Press Start 2P', cursive;
         color:#fff;
+        background-color: transparent;
+        -webkit-text-decoration-skip: objects;
+        -webkit-transition: .5s all ease;
+        -moz-transition: .5s all ease;
+        transition: .5s all ease;
+        box-shadow:0 12px 15px 0 rgba(0,0,0,.24),0 17px 50px 0 rgba(0,0,0,.19);
+
     }
     #navbar .dropdown-menu{
         background: #0c73cc;
@@ -58,7 +72,7 @@
         color: #c33131;
         color:black;
     }
-    #navbar .nav-item .nav-link{
+    #navbar .nav-item {
         -webkit-transition: .5s all ease;
         -moz-transition: .5s all ease;
         transition: .5s all ease;
@@ -68,7 +82,11 @@
         padding: 1px;
         margin-left:5px;
         font-weight:700;
-    }
+       -webkit-transition: .5s all ease;
+       -moz-transition: .5s all ease;
+       transition: .5s all ease;
+
+   }
 
 </style>
 
@@ -84,7 +102,7 @@
             <div class="collapse navbar-collapse" id="navbarTogglerDemo03" style="background: #007b5e; color: black">
                 <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link" href="">Home <span class="sr-only">(current)</span></a>
+                        <a class="nav-link" href="home.jsp">Home<span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="login.jsp">Login</a>
