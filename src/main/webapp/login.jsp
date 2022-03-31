@@ -97,14 +97,16 @@
         border:none;
         padding:15px 20px;
         border-radius:25px;
+        color: #020202;
         background: rgb(255, 255, 255);
     }
+
     .login-form .group input[data-type="password"]{
         text-security:circle;
         -webkit-text-security:circle;
     }
     .login-form .group .label{
-        color:#aaa;
+        color: #020202;
         font-size:12px;
     }
     .login-form .group .button{
@@ -142,7 +144,7 @@
         transform:scale(0) rotate(0);
     }
     .login-form .group .check:checked + label{
-        color:#fff;
+        color: #020202;
     }
     .login-form .group .check:checked + label .icon{
         background:#1161ee;

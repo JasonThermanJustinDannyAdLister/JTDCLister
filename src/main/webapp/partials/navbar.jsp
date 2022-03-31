@@ -25,6 +25,7 @@
         text-transform: uppercase;
         background-color: #007b5e;
     }
+
     #navbar .navbar-brand{
         font-family: 'Press Start 2P', cursive;
     }
@@ -53,7 +54,7 @@
         -moz-transition: .5s all ease;
         transition: .5s all ease;
         box-shadow:0 12px 15px 0 rgba(0,0,0,.24),0 17px 50px 0 rgba(0,0,0,.19);
-
+        border-radius: 25px;
     }
     #navbar .dropdown-menu{
         background: #0c73cc;
