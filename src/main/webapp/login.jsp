@@ -5,13 +5,15 @@
   Time: 12:12 PM
   To change this template use File | Settings | File Templates.
 --%>
+
+<!DOCTYPE html>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
-<!DOCTYPE html>
 <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <%@ include file="partials/navbar.jsp" %>
+
 <style>
     body {
         margin:0;
@@ -198,8 +200,14 @@
                     <input type="submit" class="button" value="Sign In">
                 </div>
                 <div class="hr"></div>
+                    <div id="error"></div>
+                    <c:if test="${'error' != null}">
+                        <h1>${error}</h1>
+                        <!-- Show the error div with message-->
+                    </c:if>
                 </form>
             </div>
+
             <div class="for-pwd-htm">
                 <div class="group">
                     <label for="user" class="label">Username or Email</label>

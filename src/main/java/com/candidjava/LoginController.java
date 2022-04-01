@@ -1,5 +1,6 @@
 package com.candidjava;
 import java.io.IOException;
+import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -20,7 +21,11 @@ public class LoginController extends HttpServlet {
         }
         else
         {
-            response.sendRedirect("login.jsp");
+            request.setAttribute("error","Invalid Username or Password");
+            RequestDispatcher rd=request.getRequestDispatcher("/login.jsp");
+            rd.include(request, response);
+//            response.sendRedirect("login.jsp");
+
         }
     }
 }

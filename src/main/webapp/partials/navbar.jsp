@@ -5,9 +5,10 @@
   Time: 4:41 PM
   To change this template use File | Settings | File Templates.
 --%>
+<!DOCTYPE html>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
-<!DOCTYPE html>
+
 
 <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
@@ -79,16 +80,18 @@
         transition: .5s all ease;
 
     }
-   #navbar .nav-item .nav-link:hover .navbar .nav-item .nav-link{
-        padding: 1px;
-        margin-left:5px;
-        font-weight:700;
+   #navbar .nav-item  .navbar .nav-item {
+       padding: 1px;
+       margin-left: 5px;
+
        -webkit-transition: .5s all ease;
        -moz-transition: .5s all ease;
        transition: .5s all ease;
 
    }
+    .nav-link:hover {
 
+    }
 </style>
 
 
