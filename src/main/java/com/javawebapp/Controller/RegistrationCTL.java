@@ -15,7 +15,7 @@ import com.javawebapp.utility.ServletUtility;
 /**
  * Servlet implementation class RegistrationCTL
  */
-@WebServlet(name = "RegistrationCTL", urlPatterns = {"/RegistrationCTL"})
+@WebServlet(name = "RegistrationCTL", urlPatterns = "/RegistrationCTL")
 public class RegistrationCTL extends HttpServlet {
     private static final long serialVersionUID = 1L;
 

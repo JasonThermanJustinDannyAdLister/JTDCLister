@@ -32,11 +32,11 @@ public class JDBCDataSource
             datasource.cpds.setJdbcUrl(rb.getString("url"));
             datasource.cpds.setUser(rb.getString("username"));
             datasource.cpds.setPassword(rb.getString("password"));
-            datasource.cpds.setInitialPoolSize(new Integer((String) rb .getString("initialPoolSize")));
-            datasource.cpds.setAcquireIncrement(new Integer((String) rb.getString("acquireIncrement")));
-            datasource.cpds.setMaxPoolSize(new Integer((String) rb.getString("maxPoolSize")));
+            datasource.cpds.setInitialPoolSize(Integer.parseInt((String) rb.getString("initialPoolSize")));
+            datasource.cpds.setAcquireIncrement(Integer.parseInt((String) rb.getString("acquireIncrement")));
+            datasource.cpds.setMaxPoolSize(Integer.parseInt((String) rb.getString("maxPoolSize")));
             datasource.cpds.setMaxIdleTime(DataUtility.getInt(rb.getString("timeout")));
-            datasource.cpds.setMinPoolSize(new Integer((String) rb.getString("minPoolSize")));
+            datasource.cpds.setMinPoolSize(Integer.parseInt((String) rb.getString("minPoolSize")));
         }
         return datasource;
     }

@@ -32,7 +32,7 @@
 <%--    <c:if test="${Register1}">--%>
 <%--        <jsp:include page ="register.jsp"/>--%>
 <%--    </c:if>--%>
-<%--    <jsp:include page="partials/footer.jsp"/>--%>
+<%--&lt;%&ndash;    <jsp:include page="partials/footer.jsp"/>&ndash;%&gt;--%>
 
 <%--</div>--%>
 <%--</body>--%>
@@ -47,9 +47,9 @@
         <div class="carousel-item">
             <img src="../HART_LOGO.png" class="d-block w-100" alt="...">
         </div>
-        <div class="carousel-item">
-            <img src="../Naturally.gif" class="d-block w-100" alt="...">
-        </div>
+<%--        <div class="carousel-item">--%>
+<%--            <img src="../Naturally.gif" class="d-block w-100" alt="...">--%>
+<%--        </div>--%>
     </div>
     <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
