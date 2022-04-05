@@ -8,7 +8,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class MySQLAdsDao implements Ads {
-    private Connection connection;
+    private Connection connection = null;
 
     public MySQLAdsDao(Config config) {
         try {
