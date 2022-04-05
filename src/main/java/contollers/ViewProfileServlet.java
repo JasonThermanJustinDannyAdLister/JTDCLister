@@ -1,3 +1,5 @@
+package contollers;
+
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -8,6 +10,11 @@ import java.io.IOException;
 @WebServlet(name = "ViewProfileServlet", urlPatterns = "/profile")
 public class ViewProfileServlet extends HttpServlet {
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        request.getRequestDispatcher("/profile.jsp").forward(request, response);
+        if (request.getSession().getAttribute("user") == null) {
+            request.getSession().setAttribute("redirect", "/profile");
+            response.sendRedirect("/login");
+            return;
+        }
+        request.getRequestDispatcher("/WEB-INF/profile.jsp").forward(request, response);
     }
 }
