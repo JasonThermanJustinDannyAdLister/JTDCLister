@@ -13,33 +13,35 @@
 <div class="container">
     <h1>Welcome, ${sessionScope.user}!</h1>
     <br>
-<%--    <h3>Here is some of your most recent ad activity</h3>--%>
-</div>
+    <h3>Your posted ads:</h3>
+    <c:forEach var="ad" items="${ads}">
+    <div class="col-md-6">
+        <h2>${ad.title}</h2>
+        <p>${ad.description}</p>
+        <p>${ad.id}</p>
+<%--        <a href="/update"><button class="btn btn-success">Update</button></a>--%>
+<%--        <a href="/delete"><button class="btn btn-danger">Delete</button></a>--%>
+    </div>
 
-<%--<c:if test="${not empty userAds} ">--%>
-<%--<c:forEach var="ad" items="${sessionScope.userAds}">--%>
+    USER DISPLAY
+    <div class="card">
+        <h2>Seller Information</h2>
+        <div class="card-body">
+<%--            <p>Date Posted: ${ad.date}</p>--%>
+        </div>
+    </div>
+    <%--AD DISPLAY--%>
+    <div class="card">
+        <h4>Title: </h4>
+        <div class="card-body">
 
-    <%--USER DISPLAY--%>
-<%--    <div class="card">--%>
-<%--        <h2>Seller Information</h2>--%>
-<%--        <div class="card-body">--%>
-<%--&lt;%&ndash;            <p>Date Posted: ${ad.date}</p>&ndash;%&gt;--%>
-<%--        </div>--%>
-<%--    </div>--%>
-<%--    &lt;%&ndash;AD DISPLAY&ndash;%&gt;--%>
-<%--    <div class="card">--%>
-<%--        <h4>Title: </h4>--%>
-<%--        <div class="card-body">--%>
-
-<%--                ${ad.title}--%>
-<%--        </div>--%>
-<%--        <div class="card-body">--%>
-<%--            <h4>Description: </h4>--%>
-<%--                ${ad.description}--%>
-<%--        </div>--%>
-<%--    </div>--%>
-<%--</c:forEach>--%>
-<%--</c:if>--%>
-
+                ${ad.title}
+        </div>
+        <div class="card-body">
+            <h4>Description: </h4>
+                ${ad.description}
+        </div>
+    </div>
+</c:forEach>
 </body>
 </html>

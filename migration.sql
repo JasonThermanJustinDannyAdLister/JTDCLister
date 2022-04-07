@@ -12,18 +12,19 @@ DROP TABLE IF EXISTS users;
 
 
 
-# CREATE USER 'admin'@'localhost' IDENTIFIED BY 'password';
+CREATE USER 'admin'@'localhost' IDENTIFIED BY 'password';
 #
-# GRANT CREATE, ALTER, INSERT, DROP ON adlister_db.* TO 'admin'@'localhost';
+GRANT CREATE, ALTER, INSERT, DROP ON adlister_db.* TO 'admin'@'localhost';
 
 CREATE TABLE IF NOT EXISTS users(
-                                    id INT UNSIGNED NOT NULL AUTO_INCREMENT,
-                                    username VARCHAR(50) NOT NULL,
-                                    email VARCHAR(100) NOT NULL,
-                                    password VARCHAR(200) NOT NULL,
-                                    PRIMARY KEY (id),
-                                    UNIQUE (username, email)
+        id INT UNSIGNED NOT NULL AUTO_INCREMENT,
+        username VARCHAR(240) NOT NULL,
+        email VARCHAR(240) NOT NULL,
+        password VARCHAR(255) NOT NULL,
+        PRIMARY KEY (id),
+        UNIQUE (username)
 );
+
 INSERT INTO users(username, email, password)
 VALUES ('codeup', 'codeup@codeup.com', 'codeup'),
        ('sally', 'sally@codeup.com', 'sally'),
