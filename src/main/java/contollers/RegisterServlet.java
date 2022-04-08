@@ -2,6 +2,7 @@ package contollers;
 
 import dao.DaoFactory;
 import models.User;
+import util.Password;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -35,7 +36,7 @@ public class RegisterServlet extends HttpServlet {
 //        }
 
         // create and save a new user
-        User user = new User(username, email, password);
+        User user = new User(username, email, Password.hash(password));
         System.out.println(user.getUsername());
         DaoFactory.getUsersDao().insert(user);
         request.getSession().setAttribute("user", user);

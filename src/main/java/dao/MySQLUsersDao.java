@@ -7,20 +7,8 @@ import models.User;
 import java.sql.*;
 
 public class MySQLUsersDao implements Users {
+
     private Connection connection;
-//    private static Config config;
-
-//    static {
-//        try {
-//            config = new Config();
-//        } catch (SQLException e) {
-//            e.printStackTrace();
-//        }
-//    }
-
-    public static void main(String[] args) {
-
-    }
 
     public MySQLUsersDao(Config config) {
         try {
@@ -33,6 +21,18 @@ public class MySQLUsersDao implements Users {
         } catch (SQLException e) {
             throw new RuntimeException("Error connecting to the database!", e);
         }
+    }
+
+    private User extractUser(ResultSet rs) throws SQLException {
+        if (! rs.next()) {
+            return null;
+        }
+        return new User(
+                rs.getLong("id"),
+                rs.getString("username"),
+                rs.getString("email"),
+                rs.getString("password")
+        );
     }
 
     @Override
@@ -50,9 +50,8 @@ public class MySQLUsersDao implements Users {
 
     @Override
     public Long insert(User user) {
-
+        String query = "INSERT INTO users(username, email, password) VALUES (?, ?, ?)";
         try {
-            String query = "INSERT INTO users(username, email, password) VALUES (?, ?, ?)";
             PreparedStatement stmt = connection.prepareStatement(query, Statement.RETURN_GENERATED_KEYS);
             stmt.setString(1, user.getUsername());
             stmt.setString(2, user.getEmail());
@@ -66,31 +65,31 @@ public class MySQLUsersDao implements Users {
         }
     }
 
-    public boolean update(User user) {
-        String query = "UPDATE users SET email = ?, password = ? WHERE id = ?";
+    @Override
+    public void replace(User user) {
+        String query = "UPDATE users SET username = ?, email = ?, password = ? WHERE id = ?";
         try {
             PreparedStatement stmt = connection.prepareStatement(query);
-            stmt.setString(1, user.getEmail());
-            stmt.setString(2, user.getPassword());
-            stmt.setLong(3, user.getId());
-            boolean rowUpdated = stmt.executeUpdate() > 0;
-            stmt.close();
-            return rowUpdated;
+            stmt.setString(1, user.getUsername());
+            stmt.setString(2, user.getEmail());
+            stmt.setString(3, user.getPassword());
+            stmt.setLong(4, user.getId());
+            stmt.executeUpdate();
         } catch (SQLException e) {
-            throw new RuntimeException("Error updating user", e);
+            throw new RuntimeException("Unable to update profile", e);
         }
     }
 
-    private User extractUser(ResultSet rs) throws SQLException {
-        if (! rs.next()) {
-            return null;
+    @Override
+    public User findByUserId(Long id) {
+        String query = "SELECT * FROM users WHERE id = ?";
+        try {
+            PreparedStatement stmt = connection.prepareStatement(query);
+            stmt.setLong(1, id);
+            return extractUser(stmt.executeQuery());
+        } catch (SQLException e) {
+            throw new RuntimeException("Error finding a user by username", e);
         }
-        return new User(
-                rs.getLong("id"),
-                rs.getString("username"),
-                rs.getString("email"),
-                rs.getString("password")
-        );
     }
 
 }
