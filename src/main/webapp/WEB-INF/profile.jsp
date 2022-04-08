@@ -11,7 +11,7 @@
 <jsp:include page="/WEB-INF/partials/navbar.jsp"/>
 
 <div class="container">
-    <h1>Welcome, ${sessionScope.user}!</h1>
+    <h1>Welcome, ${sessionScope.user.username}!</h1>
     <br>
     <h3>Your posted ads:</h3>
     <c:forEach var="ad" items="${ads}">

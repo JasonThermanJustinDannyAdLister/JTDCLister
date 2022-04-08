@@ -34,7 +34,18 @@ public class MySQLUsersDao implements Users {
                 rs.getString("password")
         );
     }
-
+    public void editProfile(String username, String password, long id) {
+        String query = "UPDATE users SET username = ?, password = ? WHERE id = ?";
+        try {
+            PreparedStatement stmt = connection.prepareStatement(query, Statement.RETURN_GENERATED_KEYS);
+            stmt.setString(1, username);
+            stmt.setString(2, password);
+            stmt.setLong(3, id);
+            stmt.executeUpdate();
+        } catch (SQLException throwables) {
+            throwables.printStackTrace();
+        }
+    }
     @Override
     public User findByUsername(String username) {
         String query = "SELECT * FROM users WHERE username = ? LIMIT 1";
@@ -65,7 +76,7 @@ public class MySQLUsersDao implements Users {
         }
     }
 
-    @Override
+
     public void replace(User user) {
         String query = "UPDATE users SET username = ?, email = ?, password = ? WHERE id = ?";
         try {
@@ -80,7 +91,6 @@ public class MySQLUsersDao implements Users {
         }
     }
 
-    @Override
     public User findByUserId(Long id) {
         String query = "SELECT * FROM users WHERE id = ?";
         try {
