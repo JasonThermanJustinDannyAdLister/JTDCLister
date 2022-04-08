@@ -23,4 +23,6 @@
     <h1>Welcome to the Adlister!</h1>
 </div>
 </body>
+<jsp:include page="/WEB-INF/partials/footer.jsp" />
+
 </html>
