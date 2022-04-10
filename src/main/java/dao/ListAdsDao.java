@@ -2,6 +2,7 @@ package dao;
 
 import models.Ad;
 
+import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -69,6 +70,11 @@ public class ListAdsDao implements Ads {
 
     @Override
     public Ad getAdDetails(long id) {
+        return null;
+    }
+
+    @Override
+    public List<Ad> searchAds(String keyword) throws SQLException {
         return null;
     }
 

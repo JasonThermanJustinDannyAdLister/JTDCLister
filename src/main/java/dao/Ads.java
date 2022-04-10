@@ -1,6 +1,8 @@
 package dao;
 
 import models.Ad;
+
+import java.sql.SQLException;
 import java.util.List;
 public interface Ads {
     // get a list of all the ads
@@ -19,4 +21,5 @@ public interface Ads {
 
     List<Ad> allUserAds(long currentUserId);
     Ad getAdDetails(long id);
+    List<Ad> searchAds(String keyword) throws SQLException;
 }

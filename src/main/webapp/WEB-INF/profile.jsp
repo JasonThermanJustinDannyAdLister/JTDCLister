@@ -13,17 +13,17 @@
 <div class="container">
     <h1>Welcome, ${sessionScope.user.username}!</h1>
     <br>
-    <h3>Your posted ads:</h3>
+    <h3>Your posts:</h3>
     <c:forEach var="ad" items="${ads}">
     <div class="col-md-6">
         <h2>${ad.title}</h2>
         <p>${ad.description}</p>
         <p>${ad.id}</p>
-<%--        <a href="/update"><button class="btn btn-success">Update</button></a>--%>
-<%--        <a href="/delete"><button class="btn btn-danger">Delete</button></a>--%>
+        <a href="/update"><button class="btn btn-success">Update</button></a>
+        <a href="/delete"><button class="btn btn-danger">Delete</button></a>
     </div>
 
-    USER DISPLAY
+<%--    USER DISPLAY--%>
     <div class="card">
         <h2>Seller Information</h2>
         <div class="card-body">

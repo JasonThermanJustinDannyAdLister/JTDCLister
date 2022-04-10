@@ -1,3 +1,5 @@
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <style>
     /* Footer */
     @import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
@@ -92,7 +94,7 @@
         </div>
         <div class="row">
             <div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-2 text-center text-white">
-                <p class="h6">&copy All Rights Reserved.<a class="text-green ml-2" href="https://jhconger.github.io/personal_website" target="_blank">JHCode™</a></p>
+                <p class="h6">&copy All Rights Reserved.<a class="text-green ml-2" href="https://jhconger.github.io/personal_website" target="_blank">JTDCode™</a></p>
             </div>
             </hr>
         </div>
