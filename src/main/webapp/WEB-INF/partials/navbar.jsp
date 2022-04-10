@@ -55,7 +55,8 @@
         color: #c33131;
         color:black;
     }
-    #navbar .nav-item .nav-link{
+    #navbar .nav-item .nav-link {
+    }
     #navbar .nav-item {
         -webkit-transition: .5s all ease;
         -moz-transition: .5s all ease;
@@ -65,7 +66,7 @@
         padding: 1px;
         margin-left:5px;
         font-weight:700;
-    }
+
     -webkit-transition: .5s all ease;
     -moz-transition: .5s all ease;
     transition: .5s all ease;
