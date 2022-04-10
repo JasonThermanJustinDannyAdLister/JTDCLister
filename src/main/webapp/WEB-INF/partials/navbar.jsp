@@ -1,5 +1,8 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <style>
     @import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
     @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
@@ -100,7 +103,6 @@
                     <li class="nav-item">
                         <a class="nav-link" href="/ads/create">Create Ads</a>
                     </li>
-
                     <li class="nav-item dropdown dmenu">
                     </li>
                     <li class="nav-item dropdown dmenu">
@@ -111,6 +113,7 @@
                             <a class="dropdown-item" href="#">Lorem ipsum dolor</a>
                         </div>
                     </li>
+
                 </ul>
                 <form class="form-inline my-2 my-lg-0" action="/search" method="POST">
                     <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
