@@ -10,11 +10,7 @@ public class DaoFactory {
     private static Config config;
 
     static {
-        try {
-            config = new Config();
-        } catch (SQLException e) {
-            e.printStackTrace();
-        }
+        config = new Config();
     }
 
     public static Ads getAdsDao() {
