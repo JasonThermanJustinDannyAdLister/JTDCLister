@@ -19,7 +19,6 @@
     <title>Login Page</title>
 </head>
 <body id="body">
-<jsp:include page="/WEB-INF/partials/navbar.jsp" />
 <div class="container-fluid">
     <h1 id="main_header">Please Log In</h1>
     <form action="/login" method="POST">
