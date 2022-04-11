@@ -26,6 +26,7 @@ public class SearchServlet extends HttpServlet {
         request.getRequestDispatcher("/WEB-INF/ads/index.jsp").forward(request, response);
     }
 }
+
 //@WebServlet("/search")
 //public class SearchServlet extends HttpServlet {
 //
