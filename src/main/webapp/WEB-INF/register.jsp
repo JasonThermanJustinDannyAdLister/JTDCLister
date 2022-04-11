@@ -37,5 +37,7 @@
     </form>
     <a href="/login">Already have an account? Click here to login.</a>
 </div>
+
+
 </body>
 </html>
