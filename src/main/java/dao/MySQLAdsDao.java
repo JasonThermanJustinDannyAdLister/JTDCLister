@@ -1,5 +1,5 @@
 package dao;//package dao;
-//
+import models.Ad;
 import com.mysql.cj.jdbc.Driver;
 import models.Ad;
 import models.Config;
@@ -281,5 +281,20 @@ public class MySQLAdsDao implements Ads {
             throw new RuntimeException("Error retrieving all ads.", e);
         }
     }
-}
 
+
+
+    public List<Ad> searchAdsFromResults(String searchInput) throws SQLException {
+        try {
+            String searchQuery = "SELECT * FROM ads WHERE title LIKE ? OR description LIKE ?";
+            String searchQueryPlus = "%" + searchInput + "%";
+            PreparedStatement stmt = connection.prepareStatement(searchQuery);
+            stmt.setString(1, searchQueryPlus);
+            stmt.setString(2, searchQueryPlus);
+            ResultSet rs = stmt.executeQuery();
+            return createAdsFromResults(rs);
+        } catch (SQLException e) {
+            throw new RuntimeException("Sorry, no matches", e);
+        }
+    }
+}

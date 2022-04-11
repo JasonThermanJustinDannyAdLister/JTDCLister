@@ -54,5 +54,5 @@ public interface Ads {
     List<Ad> sortAds(long id);
     List<Ad> sortAdsAscending();
     List<Ad> sortAdsAscending(long id);
-
+    List<Ad> searchAdsFromResults(String searchAds) throws SQLException;
 }

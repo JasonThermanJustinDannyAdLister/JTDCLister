@@ -97,6 +97,11 @@ public class ListAdsDao implements Ads {
         return null;
     }
 
+    @Override
+    public List<Ad> searchAdsFromResults(String searchAds) throws SQLException {
+        return null;
+    }
+
 
     public List<Ad> allUserAds(long currentUserId) {
         return null;
