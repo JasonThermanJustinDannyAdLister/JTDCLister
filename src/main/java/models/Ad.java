@@ -96,18 +96,18 @@ package models;
 //    }
 //}
 
-import java.sql.Timestamp;
+import java.sql.Date;
 
 public class Ad {
     private long id;
     private long userId;
     private String title;
     private String description;
-    private Timestamp date_created;
+    private Date date_created;
     private String category;
 
 
-    public Ad(long id, long userId, String title, String description, Timestamp date_created) {
+    public Ad(long id, long userId, String title, String description) {
         this.id = id;
         this.userId = userId;
         this.title = title;
@@ -119,14 +119,10 @@ public class Ad {
         this.userId = userId;
         this.title = title;
         this.description = description;
-//        java.util.Date date = new java.util.Date();
-//        java.sql.Date sqlDate = new Date(date.getTime());
-        Timestamp newDate = new java.sql.Timestamp(System.currentTimeMillis());
-//        java.sql.Date newDate = new Date(System.currentTimeMillis());
-        this.date_created = newDate;
+        this.date_created = new Date(System.currentTimeMillis());
     }
 
-    public Ad(long userId, String title, String description, Timestamp date_created, String name) {
+    public Ad(long userId, String title, String description, Date date_created, String name) {
 
         this.userId = userId;
         this.title = title;
@@ -149,9 +145,9 @@ public class Ad {
         return userId;
     }
 
-    public Timestamp getDate(){return date_created;}
+    public Date getDate(){return date_created;}
 
-    public void setDate(Timestamp date_created) {
+    public void setDate(Date date_created) {
         this.date_created = date_created;
     }
 
@@ -175,11 +171,11 @@ public class Ad {
         this.description = description;
     }
 
-    public Timestamp getDate_created() {
+    public Date getDate_created() {
         return date_created;
     }
 
-    public void setDate_created(Timestamp date_created) {
+    public void setDate_created(Date date_created) {
         this.date_created = date_created;
     }
 
