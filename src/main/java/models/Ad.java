@@ -97,7 +97,6 @@ package models;
 //}
 
 import java.sql.Date;
-import java.sql.Timestamp;
 
 public class Ad {
     private long id;
@@ -108,7 +107,7 @@ public class Ad {
     private String category;
 
 
-    public Ad(long id, long userId, String title, String description, Date date_created) {
+    public Ad(long id, long userId, String title, String description) {
         this.id = id;
         this.userId = userId;
         this.title = title;
