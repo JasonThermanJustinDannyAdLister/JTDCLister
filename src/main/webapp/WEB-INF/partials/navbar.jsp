@@ -111,7 +111,7 @@
                     <li class="nav-item dropdown dmenu">
                         <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">Action</a>
                         <div class="dropdown-menu sm-menu">
-                            <a class="dropdown-item" href="#">Lorem</a>
+                            <a class="dropdown-item" href="/ads">Ads</a>
                             <a class="dropdown-item" href="#">Lorem ipsum</a>
                             <a class="dropdown-item" href="#">Lorem ipsum dolor</a>
                         </div>
