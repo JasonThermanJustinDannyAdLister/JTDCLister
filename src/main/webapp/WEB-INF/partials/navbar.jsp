@@ -93,6 +93,9 @@
                     <li class="nav-item">
                         <a class="nav-link" href="/login">Login</a>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/logout">Logout</a>
+                    </li>
 <%--                    <li class="nav-item">--%>
 <%--                        <a class="nav-link" href="">Home <span class="sr-only">(current)</span></a>--%>
 <%--                        <a class="nav-link" href="home.jsp">Home<span class="sr-only">(current)</span></a>--%>
