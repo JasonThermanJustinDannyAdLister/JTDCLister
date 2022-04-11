@@ -12,20 +12,20 @@ import java.io.IOException;
 import java.sql.SQLException;
 import java.util.List;
 
-@WebServlet(name = "SearchServlet", urlPatterns = "/search")
-public class SearchServlet extends HttpServlet {
-    protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        String searchString = request.getParameter("search");
-        List<Ad> ads = null;
-        try {
-            ads = DaoFactory.getAdsDao().searchAds(searchString);
-        } catch (SQLException e) {
-            e.printStackTrace();
-        }
-        request.setAttribute("ads", ads);
-        request.getRequestDispatcher("/WEB-INF/ads/index.jsp").forward(request, response);
-    }
-}
+//@WebServlet(name = "SearchServlet", urlPatterns = "/search")
+//public class SearchServlet extends HttpServlet {
+//    protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+//        String searchString = request.getParameter("search");
+//        List<Ad> ads = null;
+//        try {
+//            ads = DaoFactory.getAdsDao().searchAds(searchString);
+//        } catch (SQLException e) {
+//            e.printStackTrace();
+//        }
+//        request.setAttribute("ads", ads);
+//        request.getRequestDispatcher("/WEB-INF/ads/index.jsp").forward(request, response);
+//    }
+//}
 //@WebServlet("/search")
 //public class SearchServlet extends HttpServlet {
 //
@@ -42,3 +42,25 @@ public class SearchServlet extends HttpServlet {
 //        request.getRequestDispatcher("/WEB-INF/ads/index.jsp").forward(request, response);
 //    }
 //}
+@WebServlet(name = "SearchServlet", urlPatterns = "/search_ads")
+public class SearchServlet extends HttpServlet {
+    protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        if (request.getSession().getAttribute("user") == null) {
+            response.sendRedirect("/profile");
+            return;
+        }
+        request.getRequestDispatcher("/WEB-INF/search.jsp").forward(request, response);
+    }
+
+    protected void doPost(HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException {
+        String searched_ad = request.getParameter("searched_ads");
+
+        if (searched_ad == null) {
+            response.sendRedirect("/search_ads");
+            return;
+        }
+        request.setAttribute("searched_ads", DaoFactory.getAdsDao().findByTitle(searched_ad));
+        request.getRequestDispatcher("/WEB-INF/ads/searched.jsp").forward(request, response);
+
+    }
+}

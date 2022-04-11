@@ -1,6 +1,7 @@
 package dao;
 
 import models.Ad;
+import models.User;
 
 import java.sql.SQLException;
 import java.util.ArrayList;
@@ -16,7 +17,7 @@ public class ListAdsDao implements Ads {
         return ads;
     }
 
-    public Long insert(Ad ad) {
+    public long insert(Ad ad) {
         // make sure we have ads
         if (ads == null) {
             ads = generateAds();
@@ -29,51 +30,84 @@ public class ListAdsDao implements Ads {
     }
 
     @Override
+    public List<Ad> findByTitle(String searched_ad) {
+        return null;
+    }
+
+    @Override
+    public Ad findById(long id) {
+        return null;
+    }
+
+    @Override
+    public void editAd(String title, String description, Long newId) {
+
+    }
+
+    @Override
+    public List<Ad> allForUser(User user) {
+        return null;
+    }
+
+    @Override
+    public Ad getAdById(long id) {
+        return null;
+    }
+
+    @Override
+    public void deleteAd(Ad ad) {
+
+    }
+
+    @Override
+    public Long delete(Long adId) {
+        return null;
+    }
+
+
     public Ad attainAdId(long id) {
         return null;
     }
 
-    @Override
     public void delete(String id) {
 
     }
 
-    @Override
+
     public void edit(Ad newAd) {
 
     }
 
-    @Override
+
     public List<Ad> sortAds() {
         return null;
     }
 
-    @Override
+
     public List<Ad> sortAds(long id) {
         return null;
     }
 
-    @Override
+
     public List<Ad> sortAdsAscending() {
         return null;
     }
 
-    @Override
     public List<Ad> sortAdsAscending(long id) {
         return null;
     }
 
-    @Override
+
     public List<Ad> allUserAds(long currentUserId) {
         return null;
     }
 
-    @Override
+
     public Ad getAdDetails(long id) {
         return null;
     }
 
-    @Override
+
     public List<Ad> searchAds(String keyword) throws SQLException {
         return null;
     }

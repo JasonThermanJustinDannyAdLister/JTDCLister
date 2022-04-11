@@ -3,6 +3,8 @@ package dao;//package dao;
 import com.mysql.cj.jdbc.Driver;
 import models.Ad;
 import models.Config;
+import models.User;
+
 import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
@@ -46,7 +48,7 @@ public class MySQLAdsDao implements Ads {
         }
     }
 
-    @Override
+
     public Ad getAdDetails(long id) {
         PreparedStatement stmt = null;
         try {
@@ -62,13 +64,13 @@ public class MySQLAdsDao implements Ads {
         return null;
     }
 
-    @Override
+
     public List<Ad> searchAds(String keyword) throws SQLException {
         return null;
     }
 
-    @Override
-    public Long insert(Ad ad) {
+
+    public long insert(Ad ad) {
         try {
             String insertQuery = "INSERT INTO ads(user_id, title, description, date_created) VALUES (?, ?, ?, ?)";
             PreparedStatement stmt = connection.prepareStatement(insertQuery, Statement.RETURN_GENERATED_KEYS);
@@ -85,8 +87,42 @@ public class MySQLAdsDao implements Ads {
         }
     }
 
+//    @Override
+//    public List<Ad> findByTitle(String searched_ad) {
+//        return null;
+//    }
+
+//    @Override
+//    public Ad findById(long id) {
+//        return null;
+//    }
 
     @Override
+    public void editAd(String title, String description, Long newId) {
+
+    }
+
+    @Override
+    public List<Ad> allForUser(User user) {
+        return null;
+    }
+
+    @Override
+    public Ad getAdById(long id) {
+        return null;
+    }
+
+    @Override
+    public void deleteAd(Ad ad) {
+
+    }
+
+    @Override
+    public Long delete(Long adId) {
+        return null;
+    }
+
+
     public void delete(String id) {
         try {
             String deleteQry = "DELETE FROM  ads WHERE  id = ?";
@@ -99,8 +135,6 @@ public class MySQLAdsDao implements Ads {
     }
 
 
-
-    @Override
     public Ad attainAdId(long id) {
         String query = "SELECT * FROM ads WHERE id = ? LIMIT 1";
         try {
@@ -110,12 +144,11 @@ public class MySQLAdsDao implements Ads {
             ResultSet rs = stmt.executeQuery();
             rs.next();
             return extractAd(rs);
-        }catch(SQLException e) {
-            throw new RuntimeException("Error finding Ad id.",  e);
+        } catch (SQLException e) {
+            throw new RuntimeException("Error finding Ad id.", e);
         }
 
     }
-
 
 
     private Ad extractAd(ResultSet rs) throws SQLException {
@@ -139,10 +172,7 @@ public class MySQLAdsDao implements Ads {
     }
 
 
-
-
-    @Override
-    public void edit( Ad newAd) {
+    public void edit(Ad newAd) {
         try {
             String editQuery = "UPDATE ads SET title = ?, description = ? WHERE id = ?";
             PreparedStatement stmt = connection.prepareStatement(editQuery, Statement.RETURN_GENERATED_KEYS);
@@ -152,7 +182,7 @@ public class MySQLAdsDao implements Ads {
 //            stmt.setString(4, newAd.getCategory());
             stmt.setLong(3, newAd.getId());
             stmt.executeUpdate();
-        } catch(SQLException e) {
+        } catch (SQLException e) {
             throw new RuntimeException("Error editing ad. ", e);
         }
     }
@@ -202,6 +232,7 @@ public class MySQLAdsDao implements Ads {
             throw new RuntimeException("Error retrieving all ads.", e);
         }
     }
+
     public List<Ad> search(String searchTerm) {
         String query = "SELECT * FROM ads JOIN users ON ads.user_id = users.id WHERE ads.title LIKE ? OR ads.description LIKE ?";
         try {
@@ -217,6 +248,17 @@ public class MySQLAdsDao implements Ads {
         }
     }
 
+    public List<Ad> findByTitle(String searched_ad) {
+        String query = "SELECT * FROM ads WHERE title like ?";
+        try {
+            PreparedStatement stmt = connection.prepareStatement(query);
+            stmt.setString(1, searched_ad);
+            return createAdsFromResults(stmt.executeQuery());
+        } catch (SQLException e) {
+            throw new RuntimeException("Error finding a Ad by Title", e);
+        }
+    }
+
     private List<Ad> createAdsWithUsersFromResults(ResultSet rs) throws SQLException {
         List<Ad> ads = new ArrayList<>();
         while (rs.next()) {
@@ -224,7 +266,20 @@ public class MySQLAdsDao implements Ads {
         }
         return ads;
     }
+
+
+    public Ad findById(long id) {
+        String query = String.format("SELECT * FROM ads WHERE id = %d", id);
+        try {
+            Statement stmt = connection.createStatement();
+            ResultSet rs = stmt.executeQuery(query);
+            if (rs.next()) {
+                return extractAd(rs);
+            }
+            return null;
+        } catch (SQLException e) {
+            throw new RuntimeException("Error retrieving all ads.", e);
+        }
+    }
 }
-
-
 
