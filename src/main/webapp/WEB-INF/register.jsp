@@ -65,7 +65,7 @@
                             <!-- username input -->
                             <div class="form-outline mb-4">
                                 <label class="form-label" for="username" placeholder="username">Username</label>
-                                <input type="email" id="username" class="form-control" />
+                                <input id="username" name="username" class="form-control" type="text">
                             </div>
 
                             <!-- Email input -->
