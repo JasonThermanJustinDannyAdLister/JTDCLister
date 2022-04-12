@@ -14,7 +14,7 @@
 </head>
 <body>
 <jsp:include page="partials/navbar.jsp" />
-<div class="container">
+<%--<div class="container">--%>
 <%--    <h1>Please fill in your information.</h1>--%>
 <%--    <form action="/register" method="post">--%>
 <%--        <div class="form-group">--%>
@@ -62,32 +62,28 @@
                     <div class="card-body p-5 shadow-5 text-center">
                         <h2 class="fw-bold mb-5">Sign up now</h2>
                         <form action="/register" method="post">
-                            <!-- 2 column grid layout with text inputs for the first and last names -->
-<%--                            <div class="row">--%>
-<%--                                <div class="col-md-6 mb-4">--%>
-<%--                                    <div class="form-outline">--%>
-<%--                                        <input type="text" id="form3Example1" class="form-control" />--%>
-<%--                                        <label class="form-label" for="form3Example1">First name</label>--%>
-<%--                                    </div>--%>
-<%--                                </div>--%>
-<%--                                <div class="col-md-6 mb-4">--%>
-<%--                                    <div class="form-outline">--%>
-<%--                                        <input type="text" id="form3Example2" class="form-control" />--%>
-<%--                                        <label class="form-label" for="form3Example2">Last name</label>--%>
-<%--                                    </div>--%>
-<%--                                </div>--%>
-<%--                            </div>--%>
+                            <!-- username input -->
+                            <div class="form-outline mb-4">
+                                <label class="form-label" for="username" placeholder="username">Username</label>
+                                <input type="email" id="username" class="form-control" />
+                            </div>
 
                             <!-- Email input -->
-                            <div class="form-outline mb-4">
-                                <input type="email" id="username" class="form-control" />
-                                <label class="form-label" for="username" placeholder="username">Username</label>
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input id="email" name="email" class="form-control" type="text">
                             </div>
 
                             <!-- Password input -->
                             <div class="form-outline mb-4">
-                                <input type="password" id="form3Example4" class="form-control" />
                                 <label class="form-label" for="form3Example4">Password</label>
+                                <input type="password" id="form3Example4" class="form-control" />
+                            </div>
+
+                            <!-- Confirm Password input -->
+                            <div class="form-group">
+                                <label for="confirm_password">Confirm Password</label>
+                                <input id="confirm_password" name="confirm_password" class="form-control" type="password">
                             </div>
 
                             <!-- Checkbox -->
