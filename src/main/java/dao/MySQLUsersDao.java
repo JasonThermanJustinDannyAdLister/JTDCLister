@@ -58,6 +58,11 @@ public class MySQLUsersDao implements Users {
         }
     }
 
+    @Override
+    public User findCarsOwnerById(long id) {
+        return null;
+    }
+
 
     @Override
     public Long insert(User user) {

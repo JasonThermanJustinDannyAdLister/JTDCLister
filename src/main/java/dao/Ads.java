@@ -4,6 +4,8 @@ import models.Ad;
 
 import java.sql.SQLException;
 import java.util.List;
+
+
 public interface Ads {
     // get a list of all the ads
     List<Ad> all();
