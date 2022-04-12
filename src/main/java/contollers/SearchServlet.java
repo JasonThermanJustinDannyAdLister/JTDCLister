@@ -14,6 +14,7 @@ import java.util.List;
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 //@WebServlet(name = "SearchServlet", urlPatterns = "/search")
 //public class SearchServlet extends HttpServlet {
 //    protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
@@ -32,6 +33,9 @@ import java.util.List;
 =======
 
 >>>>>>> a188e148555ed74399c49b4c5d666bccea034c30
+=======
+
+>>>>>>> c6658fea5a67c6cdbf9b8f810d61fbaccc53245c
 @WebServlet(name = "SearchServlet", urlPatterns = "/search")
 public class SearchServlet extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
@@ -48,10 +52,14 @@ public class SearchServlet extends HttpServlet {
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> b1fd452a425e30bc584282eaca1003986900e98a
 =======
 
 >>>>>>> a188e148555ed74399c49b4c5d666bccea034c30
+=======
+
+>>>>>>> c6658fea5a67c6cdbf9b8f810d61fbaccc53245c
 //@WebServlet("/search")
 //public class SearchServlet extends HttpServlet {
 //
