@@ -42,6 +42,7 @@
                 ${ad.description}
         </div>
     </div>
+
 </c:forEach>
 </body>
 </html>

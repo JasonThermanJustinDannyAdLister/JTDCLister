@@ -93,6 +93,9 @@
                     <li class="nav-item">
                         <a class="nav-link" href="/login">Login</a>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/logout">Logout</a>
+                    </li>
 <%--                    <li class="nav-item">--%>
 <%--                        <a class="nav-link" href="">Home <span class="sr-only">(current)</span></a>--%>
 <%--                        <a class="nav-link" href="home.jsp">Home<span class="sr-only">(current)</span></a>--%>
@@ -106,9 +109,11 @@
                     <li class="nav-item dropdown dmenu">
                     </li>
                     <li class="nav-item dropdown dmenu">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">Action</a>
+                        <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">About Us</a>
                         <div class="dropdown-menu sm-menu">
-                            <a class="dropdown-item" href="#">Lorem</a>
+
+                            <a class="dropdown-item" href="/ads">Ads</a>
+
                             <a class="dropdown-item" href="#">Lorem ipsum</a>
                             <a class="dropdown-item" href="#">Lorem ipsum dolor</a>
                         </div>

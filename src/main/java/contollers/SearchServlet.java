@@ -12,6 +12,7 @@ import java.io.IOException;
 import java.sql.SQLException;
 import java.util.List;
 
+<<<<<<< HEAD
 //@WebServlet(name = "SearchServlet", urlPatterns = "/search")
 //public class SearchServlet extends HttpServlet {
 //    protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
@@ -26,6 +27,23 @@ import java.util.List;
 //        request.getRequestDispatcher("/WEB-INF/ads/index.jsp").forward(request, response);
 //    }
 //}
+=======
+@WebServlet(name = "SearchServlet", urlPatterns = "/search")
+public class SearchServlet extends HttpServlet {
+    protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        String searchString = request.getParameter("search");
+        List<Ad> ads = null;
+        try {
+            ads = DaoFactory.getAdsDao().searchAds(searchString);
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        request.setAttribute("ads", ads);
+        request.getRequestDispatcher("/WEB-INF/ads/index.jsp").forward(request, response);
+    }
+}
+
+>>>>>>> b1fd452a425e30bc584282eaca1003986900e98a
 //@WebServlet("/search")
 //public class SearchServlet extends HttpServlet {
 //
