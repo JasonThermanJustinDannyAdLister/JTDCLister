@@ -79,6 +79,8 @@ protected void doPost(HttpServletRequest request, HttpServletResponse response) 
         try {
         foundAds = DaoFactory.getAdsDao().searchAdsFromResults(searchAds);
         request.setAttribute("ads", foundAds);
+                System.out.println(searchAds);
+                System.out.println(foundAds);
         } catch (SQLException e) {
         e.printStackTrace();
         }
