@@ -121,7 +121,7 @@
 
                 </ul>
                 <form class="form-inline my-2 my-lg-0" action="/ads/searched" method="POST">
-                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search" name="search" aria-label="Search">
                     <button class="btn btn-outline-default my-2 my-sm-0" type="submit">Search</button>
 <%--                    <button type="submit" class="btn btn-default"><span class="glyphicon glyphicon-search"></span></button>--%>
                 </form>
