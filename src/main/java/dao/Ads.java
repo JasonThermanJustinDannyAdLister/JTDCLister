@@ -5,6 +5,7 @@ import models.User;
 
 import java.sql.SQLException;
 import java.util.List;
+<<<<<<< HEAD
 //public interface Ads {
 //    // get a list of all the ads
 //    List<Ad> all();
@@ -24,6 +25,10 @@ import java.util.List;
 //    Ad getAdDetails(long id);
 //    List<Ad> searchAds(String keyword) throws SQLException;
 //}
+=======
+
+
+>>>>>>> 29dcc3d345ed2580d07b12e78260af80dc1c2faf
 public interface Ads {
     // get a list of all the ads
     List<Ad> all();

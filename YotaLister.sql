@@ -2,9 +2,9 @@ DROP DATABASE IF EXISTS YotaLister_db;
 CREATE DATABASE IF NOT EXISTS YotaLister_db;
 USE YotaLister_db;
 
-DROP TABLE IF EXISTS ads_categories;
+DROP TABLE IF EXISTS cars_categories;
 DROP TABLE IF EXISTS categories;
-DROP TABLE IF EXISTS ads;
+DROP TABLE IF EXISTS cars;
 DROP TABLE IF EXISTS users;
 
 
@@ -29,7 +29,7 @@ VALUES ('codeup', 'codeup@codeup.com', '$2a$12$NLSZfZAX8uCc4j/aFL8f4OawOY2XmVMLE
        ('pepe', 'pepe@codeup.com', '$2a$12$NLSZfZAX8uCc4j/aFL8f4OawOY2XmVMLEG8lF4wrUsqBrgatLsVmy'),
        ('derek', 'derek@codeup.com', '$2a$12$NLSZfZAX8uCc4j/aFL8f4OawOY2XmVMLEG8lF4wrUsqBrgatLsVmy');
 
-CREATE TABLE IF NOT EXISTS ads(
+CREATE TABLE IF NOT EXISTS cars(
     id INT UNSIGNED NOT NULL AUTO_INCREMENT,
     user_id  INT UNSIGNED DEFAULT NULL,
     title VARCHAR(250) NOT NULL,
@@ -65,7 +65,7 @@ INSERT INTO categories(category) VALUES
     ('manual'),
     ('automatic');
 
-CREATE TABLE IF NOT EXISTS ads_categories(
+CREATE TABLE IF NOT EXISTS cars_categories(
   ad_id INT UNSIGNED NOT NULL,
   category_id INT UNSIGNED NOT NULL,
   FOREIGN KEY (ad_id) REFERENCES ads(id),
