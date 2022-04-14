@@ -80,6 +80,70 @@
             border: 1px solid #ddd;
             margin: 1px;
         }
+        .scrollspy-example {
+            position: relative;
+            height: 200px;
+            margin-top: .5rem;
+            overflow: auto;
+            color: darkgreen;
+        }
+        .scrollspy-example-two {
+            position: relative;
+            height: 150px;
+            overflow-y: hidden;
+            overflow-x: scroll;
+            color: darkgreen;
+        }
+        @media only screen and (max-width: 412px) {
+            .jumbotron {
+                height: 450px;
+                width: 100%;
+                overflow-y: hidden;
+                overflow-x: scroll;
+            }
+        }
+        .car-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin: 0 10px;
+            border: 3px solid #eee;
+            padding: 15px;
+            border-radius: 10px;
+            background: green;
+            max-width:100%;
+            max-height:100%;
+            height: 150px;
+            width: 150px;
+        }
+        .car-item:hover {
+            width: 800px;
+            height: 200px;
+            transition: ease-in-out 2s;
+            border: 3px solid #eee;
+            box-shadow: black;
+        }
+        .base {
+            background: #007b5e;
+            opacity: .8%;
+            padding: 25px;
+            position: fixed;
+            bottom: 0;
+            display: flex;
+            color: white;
+            width: 100%;
+            align-items: center;
+            justify-content: center;
+            overflow-y: hidden;
+
+        }
+
+        .base:hover {
+            opacity: 1;
+            transition: ease-in-out 2s;
+            border: whitesmoke 7px;
+        }
     </style>
 </head>
 <body id="body">
@@ -126,14 +190,17 @@
 </nav>
 <div data-spy="scroll" data-target="#navbar-example2" data-offset="0" class="scrollspy-example">
     <h2>Listings for:</h2>
-    <h4 id="verse1">2002 Toyota Camry</h4>
+
+    <h4 class="car-one" id="verse1">2002 Toyota Camery</h4>
     <p>157 to 192 hp</p>
     <p>2.4 L 4-cylinder, 3.0 L V6</p>
     <p>4-speed automatic, 5-speed manual</p>
-    <h4 id="verse2">2007 Toyota Tacoma</h4>
-    <p>Towing Capacity: 3,500 lbs</p>
-    <p>MPG: Up to 23 city / 28 highway</p>
-    <h4 id="verse3">2015 toyota tundra</h4>
+    <h4 class="car-two" id="verse2">2007 Toyota Tacoma</h4>
+    <p>Horsepower: ? to ? hp</p>
+    <p>MPG: Up to ? city / ? highway</p>
+    <h4 class="car-three" id="verse3">2015 toyota tundra</h4>
+
+
     <p>Horsepower: 310 to 381 hp</p>
     <p>MPG: Up to 15 city / 19 highway</p>
     <p>Engine: 4.6 L V8, 5.7 L V8</p>
@@ -152,26 +219,68 @@
 <div class="alert alert-success" role="alert">
     <strong>Hey User,</strong> <a href="/register"> Register</a> Or <a href="/login"> Log In</a> to see all content!!
 </div>
-<br>
 
-<div class="gallery-container">
-    <div class="gallery">
-        <div class="thumbnails">
-            <img src="https://static1.hotcarsimages.com/wordpress/wp-content/uploads/2020/10/image-1.png?q=50&fit=crop&w=750&dpr=1.5" alt="car">
-            <img src="https://static1.hotcarsimages.com/wordpress/wp-content/uploads/2020/10/image-3-e1601592524981.png?q=50&fit=crop&w=750&dpr=1.5" alt="car">
-            <img src="https://static1.hotcarsimages.com/wordpress/wp-content/uploads/2020/10/image-5-e1601592843908.png?q=50&fit=crop&w=750&dpr=1.5" alt="car">
-            <img src="https://static1.hotcarsimages.com/wordpress/wp-content/uploads/2020/10/image-6-e1601593079167.png?q=50&fit=crop&w=750&dpr=1.5" alt="car">
-            <img src="https://static1.hotcarsimages.com/wordpress/wp-content/uploads/2020/10/image-8-e1601593726138.png?q=50&fit=crop&w=750&dpr=1.5" alt="car">
-            <img src="https://static1.hotcarsimages.com/wordpress/wp-content/uploads/2020/10/image-11.png?q=50&fit=crop&w=750&dpr=1.5" alt="car">
-            <img src="https://static1.hotcarsimages.com/wordpress/wp-content/uploads/2020/10/image-12.png?q=50&fit=crop&w=750&dpr=1.5" alt="car">
-            <img src="https://static1.hotcarsimages.com/wordpress/wp-content/uploads/2020/10/image-14.png?q=50&fit=crop&w=750&dpr=1.5" alt="car">
-            <img src="https://static1.hotcarsimages.com/wordpress/wp-content/uploads/2020/10/image-15.png?q=50&fit=crop&w=750&dpr=1.5" alt="car">
-            <img src="https://static1.hotcarsimages.com/wordpress/wp-content/uploads/2020/10/image-17-e1601594471927.png?q=50&fit=crop&w=750&dpr=1.5" alt="car">
-        </div>
+<br><br><br><br><br><br>
+<%--<img class="img-thumbnail" src="../img/cars.jpeg"  alt="Thumbnail image"><img class="img-thumbnail" src="../img/carr.mp4
+" alt="Thumbnail image"><img class="img-thumbnail" src="../img/car-one.jpg" alt="Thumbnail image">--%>
+<div  id="drop" class="base car-one">
+    <div class="car-item " style="background: url(https://static1.hotcarsimages.com/wordpress/wp-content/uploads/2020/10/image-17-e1601594471927.png?q=50&fit=crop&w=750&dpr=1.5
+) no-repeat  center ; /*background-size: contain*/;">
+    </div>
+    <div class="car-item car-two" style="background: url(https://static1.hotcarsimages.com/wordpress/wp-content/uploads/2020/10/image-15.png?q=50&fit=crop&w=750&dpr=1.5) no-repeat  center; /*background-size: contain*/;">
+    </div>
+    <div class="car-item" style="background: url(https://static1.hotcarsimages.com/wordpress/wp-content/uploads/2020/10/image-13.png?q=50&fit=crop&w=750&dpr=1.5) no-repeat  center; /*background-size: contain*/;">
+    </div>
+    <div class="car-item" style="background: url(https://static1.hotcarsimages.com/wordpress/wp-content/uploads/2020/10/image-12.png?q=50&fit=crop&w=750&dpr=1.5) no-repeat  center; /*background-size: contain*/;">
+    </div>
+    <div class="car-item" style="background: url(https://static1.hotcarsimages.com/wordpress/wp-content/uploads/2020/10/image-10.png?q=50&fit=crop&w=750&dpr=1.5
+) no-repeat  center; /*background-size: contain*/;">
+    </div>
+    <div class="car-item" style="background: url(https://static1.hotcarsimages.com/wordpress/wp-content/uploads/2020/10/image-8-e1601593726138.png?q=50&fit=crop&w=750&dpr=1.5) no-repeat  center; /*background-size: contain*/;">
+    </div>
+    <div class="car-item" style="background: url(https://static1.hotcarsimages.com/wordpress/wp-content/uploads/2020/10/image-6-e1601593079167.png?q=50&fit=crop&w=750&dpr=1.5) no-repeat  center; /*background-size: contain*/;">
+    </div>
+    <div class="car-item" style="background: url(https://static1.hotcarsimages.com/wordpress/wp-content/uploads/2020/10/image-5-e1601592843908.png?q=50&fit=crop&w=750&dpr=1.5
+) no-repeat  center ; /*background-size: contain*/;">
+    </div>
+    <div class="car-item" style="background: url(https://static1.hotcarsimages.com/wordpress/wp-content/uploads/2020/10/image-3-e1601592524981.png?q=50&fit=crop&w=750&dpr=1.5
+) no-repeat  center; /*background-size: contain*/;">
+    </div>
+    <div class="car-item" style="background: url(https://static1.hotcarsimages.com/wordpress/wp-content/uploads/2020/10/image-1.png?q=50&fit=crop&w=750&dpr=1.5
+) no-repeat  center; /*background-size: contain*/; ">
+
     </div>
 </div>
 
-</body>
+
+<script>
+    $("car-1").click(function () {
+        $("li").css({"font-weight":"bolder", "color":"brown"})
+    });
+    $("car-2").click(function () {
+        $("li").css({"font-weight":"bolder", "color":"brown"})
+    });
+    $("car-3").click(function () {
+        $("li").css({"font-weight":"bolder", "color":"brown"})
+    });
+    /*Will Continue after functionality*/
+
+    var car = document.getElementsByClassName("car-one");
+    car.addEventListener('click', clicker );
+
+    function clicker() {
+        $("car-two").css({"font-weight":"bolder", "color":"brown"})
+    }
+    document.onscroll = function() {
+        if (window.innerHeight + window.scrollY > document.body.clientHeight) {
+            document.getElementById('drop').style.display='none';
+        }
+    }
+
+</script>
+<br><br><br><br><br><br><br>
 <jsp:include page="/WEB-INF/partials/footer.jsp" />
+</body>
+
 
 </html>
