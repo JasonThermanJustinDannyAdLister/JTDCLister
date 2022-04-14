@@ -9,10 +9,12 @@
         #body{
             background-color: lightgray;
         }
+
         #main_header{
             text-align: center;
             color: blue;
         }
+
         h1:hover {
             color: green;
             transition: ease-in-out 1ms;
@@ -28,43 +30,57 @@
             position: relative;
             overflow: scroll;
             overflow-y: hidden;
-
-
         }
-    </style>
-</head>
-<body id="body">
-<jsp:include page="/WEB-INF/partials/navbar.jsp" />
-<div class="alert alert-success" role="alert">
-    <strong>Try This!</strong> 🎮  Insert Konami Code🎮
-</div>
 
-<div id="main_header" class="container-fluid ">
-    <h1 class="#" style="font-family: 'Press Start 2P'">"Welcome to the Yota-Lister!"</h1>
-</div>
+        .scrollspy-example {
+            position: relative;
+            height: 200px;
+            margin-top: .5rem;
+            overflow: auto;
+            color: darkgreen;
+        }
 
-<div class="jumbotron" style="background: url(https://images.unsplash.com/photo-1618312980096-873bd19759a0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80) no-repeat  center fixed; /*background-size: contain*/;height: 400px; width:100% ">
-</div>
+        @media only screen and (max-width: 412px) {
+            .jumbotron {
+                height: 450px;
+                width: 100%;
+                overflow-y: hidden;
+                overflow-x: scroll;
+            }
+        }
 
+        .gallery-container {
+            width: 100%;
+            height: 200px;
+            overflow-y: auto;
+        }
 
-<div class="container">
-    <div class="row">
-        <div class="col-lg-3 col-md-6">
-            <p>The Yota-nation was taken by storm when magnam nost reprehenderit. Inventore repellat eum facilis illum dolor doloribus, eius quibusdam suscipit delectus vitae. Explicabo beatae vitae quos laborum expedita hic, maiores ipsa eaque? Nobis repudiandae!</p>
-        </div>
-        <div class="col-lg-3 col-md-6">
-            <p>As senior investors in Yota begin to see MASSIVE GAINS in the 3rd and 4th quarter. The question still remains whether they can maintain this momentum. Illo odit atque dolore corporis vero? Voluptatum cupiditate quisquam perspiciatis obcaecati neque.</p>
-        </div>
-        <div class="col-lg-3 col-md-6">
-            <p>GREAT MERGE between Yota and Old CEO's rival company, laboriosam distinctio distinctio est blanditiis vitae laudantium dolore? Tempore doloremque aspernatur repellat consectetur sit vero velit possimus suscipit? Odit doloremque?</p>
-        </div>
-        <div class="col-lg-3 col-md-6">
-            <p>There's never been a greater time to view a Toyota add! Totam suscipit possimus deserunt adipisci beatae? Mollitia explicabo voluptates hic delectus voluptates commodi necessitatibus perferendis. Rem ipsam itaque illo perspiciatis illo doloribus. Enim iste.</p>
-        </div>
-    </div>
-</div>
-<style type="text/css">
-    .scrollspy-example {
+        .gallery {
+            border: 1px solid black;
+            height: 200px;
+            width: 100%;
+            overflow-x: hidden;
+            overflow-y: scroll;
+        }
+
+        .thumbnails {
+            width: 100%;
+        }
+
+        .gallery-container img {
+            width: 200px;
+            height: auto;
+        }
+
+        .thumbnails img {
+            width: auto;
+            height: 200px;
+            display: inline-block;
+            float: left;
+            border: 1px solid #ddd;
+            margin: 1px;
+        }
+          .scrollspy-example {
         position: relative;
         height: 200px;
         margin-top: .5rem;
@@ -128,9 +144,39 @@
     transition: ease-in-out 2s;
     border: whitesmoke 7px;
 }
+    </style>
+</head>
+<body id="body">
+<jsp:include page="/WEB-INF/partials/navbar.jsp" />
+<div class="alert alert-success" role="alert">
+    <strong>Try This!</strong> 🎮  Insert Konami Code🎮
+</div>
+
+<div id="main_header" class="container-fluid ">
+    <h1 class="#" style="font-family: 'Press Start 2P'">"Welcome to the Yota-Lister!"</h1>
+</div>
+
+<div class="jumbotron" style="background: url(https://images.unsplash.com/photo-1618312980096-873bd19759a0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80) no-repeat  center fixed; /*background-size: contain*/;height: 400px; width:100% ">
+</div>
 
 
-</style>
+<div class="container">
+    <div class="row">
+        <div class="col-lg-3 col-md-6">
+            <p>The Yota-nation was taken by storm when magnam nost reprehenderit. Inventore repellat eum facilis illum dolor doloribus, eius quibusdam suscipit delectus vitae. Explicabo beatae vitae quos laborum expedita hic, maiores ipsa eaque? Nobis repudiandae!</p>
+        </div>
+        <div class="col-lg-3 col-md-6">
+            <p>As senior investors in Yota begin to see MASSIVE GAINS in the 3rd and 4th quarter. The question still remains whether they can maintain this momentum. Illo odit atque dolore corporis vero? Voluptatum cupiditate quisquam perspiciatis obcaecati neque.</p>
+        </div>
+        <div class="col-lg-3 col-md-6">
+            <p>GREAT MERGE between Yota and Old CEO's rival company, laboriosam distinctio distinctio est blanditiis vitae laudantium dolore? Tempore doloremque aspernatur repellat consectetur sit vero velit possimus suscipit? Odit doloremque?</p>
+        </div>
+        <div class="col-lg-3 col-md-6">
+            <p>There's never been a greater time to view a Toyota add! Totam suscipit possimus deserunt adipisci beatae? Mollitia explicabo voluptates hic delectus voluptates commodi necessitatibus perferendis. Rem ipsam itaque illo perspiciatis illo doloribus. Enim iste.</p>
+        </div>
+    </div>
+</div>
+
 <nav id="navbar-example2" class="navbar navbar-dark bg-dark">
     <h3 class="navbar-brand">Generations Of Toyota</h3>
     <ul class="nav nav-pills">
@@ -144,6 +190,7 @@
 </nav>
 <div data-spy="scroll" data-target="#navbar-example2" data-offset="0" class="scrollspy-example">
     <h2>Listings for:</h2>
+
     <h4 class="car-one" id="verse1">2002 Toyota Camery</h4>
     <p>157 to 192 hp</p>
     <p>2.4 L 4-cylinder, 3.0 L V6</p>
@@ -152,6 +199,8 @@
     <p>Horsepower: ? to ? hp</p>
     <p>MPG: Up to ? city / ? highway</p>
     <h4 class="car-three" id="verse3">2015 toyota tundra</h4>
+
+
     <p>Horsepower: 310 to 381 hp</p>
     <p>MPG: Up to 15 city / 19 highway</p>
     <p>Engine: 4.6 L V8, 5.7 L V8</p>
@@ -159,20 +208,18 @@
     <p>MPG: Up to 31 city / 40 highway</p>
     <p>Horsepower: 139 to 169 hp</p>
     <p>Engine: 1.8 L 4-cylinder, 2.0 L 4-cylinder</p>
-    <h4 id="verse5">2022 Toyota ????</h4>
-    <p>Horsepower: 139 to 169 hp</p>
-    <p>MPG: Up to ? city / ? highway</p>
-    <h4 id="verse6">2022 Toyota ????</h4>
-    <p>Horsepower: 139 to 169 hp</p>
-    <p>MPG: Up to ? city / ? highway</p>
-    <p>Horsepower: 139 to 169 hp</p>
-
+    <h4 id="verse5">2022 Toyota Tundra</h4>
+    <p>Horsepower: 348 to 389 hp</p>
+    <p>MPG: Up to 18 city / 24 highway</p>
+    <h4 id="verse6">2022 Toyota RAV4 XLE Premium</h4>
+    <p>Horsepower: 203 hp</p>
+    <p>MPG: Up to 27 city / 35 highway</p>
 </div>
-
 
 <div class="alert alert-success" role="alert">
     <strong>Hey User,</strong> <a href="/register"> Register</a> Or <a href="/login"> Log In</a> to see all content!!
 </div>
+
 <br><br><br><br><br><br>
 <%--<img class="img-thumbnail" src="../img/cars.jpeg"  alt="Thumbnail image"><img class="img-thumbnail" src="../img/carr.mp4
 " alt="Thumbnail image"><img class="img-thumbnail" src="../img/car-one.jpg" alt="Thumbnail image">--%>
@@ -201,6 +248,7 @@
     </div>
     <div class="car-item" style="background: url(https://static1.hotcarsimages.com/wordpress/wp-content/uploads/2020/10/image-1.png?q=50&fit=crop&w=750&dpr=1.5
 ) no-repeat  center; /*background-size: contain*/; ">
+
     </div>
 </div>
 

@@ -7,13 +7,9 @@ import java.sql.SQLException;
 public class DaoFactory {
     private static Ads adsDao;
     private static Users usersDao;
-    private static Config config;
+    private static Config config = new Config();
 
-    static {
-        config = new Config();
-    }
-
-    public static Ads getAdsDao() {
+    public static Ads getAdsDao(){
         if (adsDao == null) {
             adsDao = new MySQLAdsDao(config);
         }
