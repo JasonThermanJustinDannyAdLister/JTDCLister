@@ -35,6 +35,21 @@ public class ListAdsDao implements Ads {
     }
 
     @Override
+    public void editAd(Ad ad) {
+
+    }
+
+    @Override
+    public void delete(long id) {
+
+    }
+
+    @Override
+    public Ad get(long i) {
+        return null;
+    }
+
+    @Override
     public Ad findById(long id) {
         return null;
     }
