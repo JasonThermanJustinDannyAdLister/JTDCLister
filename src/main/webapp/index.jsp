@@ -9,10 +9,12 @@
         #body{
             background-color: lightgray;
         }
+
         #main_header{
             text-align: center;
             color: blue;
         }
+
         h1:hover {
             color: green;
             transition: ease-in-out 1ms;
@@ -28,8 +30,55 @@
             position: relative;
             overflow: scroll;
             overflow-y: hidden;
+        }
 
+        .scrollspy-example {
+            position: relative;
+            height: 200px;
+            margin-top: .5rem;
+            overflow: auto;
+            color: darkgreen;
+        }
 
+        @media only screen and (max-width: 412px) {
+            .jumbotron {
+                height: 450px;
+                width: 100%;
+                overflow-y: hidden;
+                overflow-x: scroll;
+            }
+        }
+
+        .gallery-container {
+            width: 100%;
+            height: 200px;
+            overflow-y: auto;
+        }
+
+        .gallery {
+            border: 1px solid black;
+            height: 200px;
+            width: 100%;
+            overflow-x: hidden;
+            overflow-y: scroll;
+        }
+
+        .thumbnails {
+            width: 100%;
+        }
+
+        .gallery-container img {
+            width: 200px;
+            height: auto;
+        }
+
+        .thumbnails img {
+            width: auto;
+            height: 200px;
+            display: inline-block;
+            float: left;
+            border: 1px solid #ddd;
+            margin: 1px;
         }
     </style>
 </head>
@@ -63,42 +112,7 @@
         </div>
     </div>
 </div>
-<style type="text/css">
-    .scrollspy-example {
-        position: relative;
-        height: 200px;
-        margin-top: .5rem;
-        overflow: auto;
-        color: darkgreen;
-    }
-    .scrollspy-example-two {
-        position: relative;
-        height: 150px;
-        overflow-y: hidden;
-        overflow-x: scroll;
-        color: darkgreen;
-    }
-    @media only screen and (max-width: 412px) {
-        .jumbotron {
-            height: 450px;
-            width: 100%;
-            overflow-y: hidden;
-            overflow-x: scroll;
-        }
-    }
 
-
-
-
-
-
-
-
-
-
-
-
-</style>
 <nav id="navbar-example2" class="navbar navbar-dark bg-dark">
     <h3 class="navbar-brand">Generations Of Toyota</h3>
     <ul class="nav nav-pills">
@@ -112,13 +126,13 @@
 </nav>
 <div data-spy="scroll" data-target="#navbar-example2" data-offset="0" class="scrollspy-example">
     <h2>Listings for:</h2>
-    <h4 id="verse1">2002 Toyota Camery</h4>
+    <h4 id="verse1">2002 Toyota Camry</h4>
     <p>157 to 192 hp</p>
     <p>2.4 L 4-cylinder, 3.0 L V6</p>
     <p>4-speed automatic, 5-speed manual</p>
     <h4 id="verse2">2007 Toyota Tacoma</h4>
-    <p>Horsepower: ? to ? hp</p>
-    <p>MPG: Up to ? city / ? highway</p>
+    <p>Towing Capacity: 3,500 lbs</p>
+    <p>MPG: Up to 23 city / 28 highway</p>
     <h4 id="verse3">2015 toyota tundra</h4>
     <p>Horsepower: 310 to 381 hp</p>
     <p>MPG: Up to 15 city / 19 highway</p>
@@ -127,43 +141,33 @@
     <p>MPG: Up to 31 city / 40 highway</p>
     <p>Horsepower: 139 to 169 hp</p>
     <p>Engine: 1.8 L 4-cylinder, 2.0 L 4-cylinder</p>
-    <h4 id="verse5">2022 Toyota ????</h4>
-    <p>Horsepower: 139 to 169 hp</p>
-    <p>MPG: Up to ? city / ? highway</p>
-    <h4 id="verse6">2022 Toyota ????</h4>
-    <p>Horsepower: 139 to 169 hp</p>
-    <p>MPG: Up to ? city / ? highway</p>
-    <p>Horsepower: 139 to 169 hp</p>
-
+    <h4 id="verse5">2022 Toyota Tundra</h4>
+    <p>Horsepower: 348 to 389 hp</p>
+    <p>MPG: Up to 18 city / 24 highway</p>
+    <h4 id="verse6">2022 Toyota RAV4 XLE Premium</h4>
+    <p>Horsepower: 203 hp</p>
+    <p>MPG: Up to 27 city / 35 highway</p>
 </div>
-
 
 <div class="alert alert-success" role="alert">
     <strong>Hey User,</strong> <a href="/register"> Register</a> Or <a href="/login"> Log In</a> to see all content!!
 </div>
 <br>
-<%--<img class="img-thumbnail" src="../img/cars.jpeg"  alt="Thumbnail image"><img class="img-thumbnail" src="../img/carr.mp4
-" alt="Thumbnail image"><img class="img-thumbnail" src="../img/car-one.jpg" alt="Thumbnail image">--%>
-<div class="container-fluid">
-    <div class="img-thumbnail" style="background: url(https://images.unsplash.com/photo-1608234493333-09825469ab3b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NTJ8fHRveW90YXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60) no-repeat  center ; /*background-size: contain*/;height: 150px; width:150px">
-    </div>
-    <div class="img-thumbnail" style="background: url(https://images.unsplash.com/photo-1578102176342-dbaecee78bca?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NDN8fHRveW90YXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60) no-repeat  center; /*background-size: contain*/;height: 150px; width:150px">
-    </div>
-    <div class="img-thumbnail" style="background: url(https://images.unsplash.com/photo-1618609740315-de8a9088ea77?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NDJ8fHRveW90YXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60) no-repeat  center; /*background-size: contain*/;height: 150px; width:150px">
-    </div>
-    <div class="img-thumbnail" style="background: url(https://images.unsplash.com/photo-1626072557464-90403d788e8d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTR8fHRveW90YXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60) no-repeat  center; /*background-size: contain*/;height: 150px; width:150px">
-    </div>
-    <div class="img-thumbnail" style="background: url(https://images.unsplash.com/flagged/photo-1564153296137-400b51e1ff6d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fHRveW90YXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60) no-repeat  center; /*background-size: contain*/;height: 150px; width:150px">
-    </div>
-    <div class="img-thumbnail" style="background: url(https://images.unsplash.com/photo-1638618164682-12b986ec2a75?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTN8fHRveW90YXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60) no-repeat  center; /*background-size: contain*/;height: 150px; width:150px">
-    </div>
-    <div class="img-thumbnail" style="background: url(https://images.unsplash.com/photo-1559416523-140ddc3d238c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8dG95b3RhfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60) no-repeat  center; /*background-size: contain*/;height: 150px; width:150px">
-    </div>
-    <div class="img-thumbnail" style="background: url(https://images.unsplash.com/photo-1629886031229-07b29e675653?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTZ8fHRveW90YSUyMHN1cHJhfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=600&q=60) no-repeat  center; /*background-size: contain*/;height: 150px; width:150px">
-    </div>
-    <div class="img-thumbnail" style="background: url(https://images.unsplash.com/photo-1618312980096-873bd19759a0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80) no-repeat  center; /*background-size: contain*/;height: fit-content; width:fit-content">
-    </div>
-    <div class="img-thumbnail" style="background: url(https://images.unsplash.com/photo-1627008119197-6889fd74266a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTl8fHRveW90YSUyMHN1cHJhfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=600&q=60) no-repeat  center; /*background-size: contain*/;height: 150px; width:150px">
+
+<div class="gallery-container">
+    <div class="gallery">
+        <div class="thumbnails">
+            <img src="https://static1.hotcarsimages.com/wordpress/wp-content/uploads/2020/10/image-1.png?q=50&fit=crop&w=750&dpr=1.5" alt="car">
+            <img src="https://static1.hotcarsimages.com/wordpress/wp-content/uploads/2020/10/image-3-e1601592524981.png?q=50&fit=crop&w=750&dpr=1.5" alt="car">
+            <img src="https://static1.hotcarsimages.com/wordpress/wp-content/uploads/2020/10/image-5-e1601592843908.png?q=50&fit=crop&w=750&dpr=1.5" alt="car">
+            <img src="https://static1.hotcarsimages.com/wordpress/wp-content/uploads/2020/10/image-6-e1601593079167.png?q=50&fit=crop&w=750&dpr=1.5" alt="car">
+            <img src="https://static1.hotcarsimages.com/wordpress/wp-content/uploads/2020/10/image-8-e1601593726138.png?q=50&fit=crop&w=750&dpr=1.5" alt="car">
+            <img src="https://static1.hotcarsimages.com/wordpress/wp-content/uploads/2020/10/image-11.png?q=50&fit=crop&w=750&dpr=1.5" alt="car">
+            <img src="https://static1.hotcarsimages.com/wordpress/wp-content/uploads/2020/10/image-12.png?q=50&fit=crop&w=750&dpr=1.5" alt="car">
+            <img src="https://static1.hotcarsimages.com/wordpress/wp-content/uploads/2020/10/image-14.png?q=50&fit=crop&w=750&dpr=1.5" alt="car">
+            <img src="https://static1.hotcarsimages.com/wordpress/wp-content/uploads/2020/10/image-15.png?q=50&fit=crop&w=750&dpr=1.5" alt="car">
+            <img src="https://static1.hotcarsimages.com/wordpress/wp-content/uploads/2020/10/image-17-e1601594471927.png?q=50&fit=crop&w=750&dpr=1.5" alt="car">
+        </div>
     </div>
 </div>
 

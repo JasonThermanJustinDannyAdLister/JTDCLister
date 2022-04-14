@@ -22,9 +22,9 @@ VALUES ('codeup', 'codeup@codeup.com', '$2a$12$NLSZfZAX8uCc4j/aFL8f4OawOY2XmVMLE
        ('pepe', 'pepe@codeup.com', '$2a$12$NLSZfZAX8uCc4j/aFL8f4OawOY2XmVMLEG8lF4wrUsqBrgatLsVmy'),
        ('derek', 'derek@codeup.com', '$2a$12$NLSZfZAX8uCc4j/aFL8f4OawOY2XmVMLEG8lF4wrUsqBrgatLsVmy');
 
-CREATE TABLE IF NOT EXISTS ads (
+CREATE TABLE IF NOT EXISTS ads(
     id INT UNSIGNED NOT NULL AUTO_INCREMENT,
-    user_id  INT UNSIGNED NOT NULL,
+    user_id  INT UNSIGNED DEFAULT NULL,
     title VARCHAR(250) NOT NULL,
     description TEXT NOT NULL,
     PRIMARY KEY (id),
@@ -44,11 +44,11 @@ VALUES (1, 'Toyota Sera', 'The Toyota Sera was not a particularly powerful car. 
        (2, 'Toyota MR2 TTE Turbo', 'The third-generation MR2 packed a 138hp 4-cylinder engine but there were certain customers who felt that power was not enough for the nimble sports car. In Europe, Toyota responded to these customers by offering a limited-edition turbo package for the MR2s.');
 
 CREATE TABLE IF NOT EXISTS categories (
-    id INT UNSIGNED NOT NULL AUTO_INCREMENT,
-    ads_id INT UNSIGNED DEFAULT NULL,
-    category VARCHAR(255) DEFAULT 'NONE',
-    PRIMARY KEY (id),
-    FOREIGN KEY (ads_id) REFERENCES ads (id)
+                                          id INT UNSIGNED NOT NULL AUTO_INCREMENT,
+                                          ads_id INT UNSIGNED DEFAULT NULL,
+                                          category VARCHAR(255) DEFAULT 'NONE',
+                                          PRIMARY KEY (id),
+                                          FOREIGN KEY (ads_id) REFERENCES ads (id)
 );
 
 INSERT INTO categories(category) VALUES
@@ -59,8 +59,8 @@ INSERT INTO categories(category) VALUES
     ('automatic');
 
 CREATE TABLE IF NOT EXISTS ads_categories(
-  ad_id INT UNSIGNED NOT NULL,
-  category_id INT UNSIGNED NOT NULL,
-  FOREIGN KEY (ad_id) REFERENCES ads(id),
-  FOREIGN KEY (category_id) REFERENCES categories(id)
+    ad_id INT UNSIGNED NOT NULL,
+    category_id INT UNSIGNED NOT NULL,
+    FOREIGN KEY (ad_id) REFERENCES ads(id),
+    FOREIGN KEY (category_id) REFERENCES categories(id)
 );
