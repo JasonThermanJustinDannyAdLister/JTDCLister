@@ -1,13 +1,14 @@
-package dao;//package dao;
+package dao;
 import models.Ad;
 import com.mysql.cj.jdbc.Driver;
-import models.Ad;
 import models.Config;
 import models.User;
 
 import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
+
+
 public class MySQLAdsDao implements Ads {
     private Connection connection = null;
 
@@ -48,28 +49,6 @@ public class MySQLAdsDao implements Ads {
         }
     }
 
-
-    public Ad getAdDetails(long id) {
-        PreparedStatement stmt = null;
-        try {
-            stmt = connection.prepareStatement("SELECT * FROM ads WHERE id = ?");
-            stmt.setLong(1, id);
-            ResultSet rs = stmt.executeQuery();
-            while (rs.next()) {
-                return extractAd(rs);
-            }
-        } catch (SQLException throwables) {
-            throwables.printStackTrace();
-        }
-        return null;
-    }
-
-
-    public List<Ad> searchAds(String keyword) throws SQLException {
-        return null;
-    }
-
-
     public long insert(Ad ad) {
         try {
             String insertQuery = "INSERT INTO ads(user_id, title, description) VALUES (?, ?, ?)";
@@ -85,16 +64,6 @@ public class MySQLAdsDao implements Ads {
             throw new RuntimeException("Error creating a new ad.", e);
         }
     }
-
-//    @Override
-//    public List<Ad> findByTitle(String searched_ad) {
-//        return null;
-//    }
-
-//    @Override
-//    public Ad findById(long id) {
-//        return null;
-//    }
 
     @Override
     public void editAd(String title, String description, Long newId) {
@@ -168,7 +137,6 @@ public class MySQLAdsDao implements Ads {
         }
         return ads;
     }
-
 
     public void edit(Ad newAd) {
         try {

@@ -5,30 +5,7 @@ import models.User;
 
 import java.sql.SQLException;
 import java.util.List;
-<<<<<<< HEAD
-//public interface Ads {
-//    // get a list of all the ads
-//    List<Ad> all();
-//    // insert a new ad and return the new ad's id
-//    Long insert(Ad ad);
-//
-//    Ad attainAdId(long id);
-//
-//    void delete(String id);
-//    void edit( Ad newAd);
-//    List<Ad> sortAds();
-//    List<Ad> sortAds(long id);
-//    List<Ad> sortAdsAscending();
-//    List<Ad> sortAdsAscending(long id);
-//
-//    List<Ad> allUserAds(long currentUserId);
-//    Ad getAdDetails(long id);
-//    List<Ad> searchAds(String keyword) throws SQLException;
-//}
-=======
 
-
->>>>>>> 29dcc3d345ed2580d07b12e78260af80dc1c2faf
 public interface Ads {
     // get a list of all the ads
     List<Ad> all();
