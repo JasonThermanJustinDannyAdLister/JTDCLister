@@ -223,6 +223,21 @@ public class MySQLAdsDao implements Ads {
         }
     }
 
+    @Override
+    public void editAd(Ad ad) {
+
+    }
+
+    @Override
+    public void delete(long id) {
+
+    }
+
+    @Override
+    public Ad get(long i) {
+        return null;
+    }
+
     private List<Ad> createAdsWithUsersFromResults(ResultSet rs) throws SQLException {
         List<Ad> ads = new ArrayList<>();
         while (rs.next()) {

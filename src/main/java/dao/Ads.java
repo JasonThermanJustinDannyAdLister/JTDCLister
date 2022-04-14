@@ -15,6 +15,10 @@ public interface Ads {
     // insert a new ad and return the new ad's id
     List<Ad>  findByTitle(String searched_ads);
 
+    void editAd(Ad ad);
+
+    void delete(long id);
+    Ad get(long i);
 
 
 
