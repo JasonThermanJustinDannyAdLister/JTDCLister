@@ -86,16 +86,48 @@
             overflow-x: scroll;
         }
     }
+    .car-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 10px;
+    border: 3px solid #eee;
+    padding: 15px;
+    border-radius: 10px;
+    background: green;
+        max-width:100%;
+        max-height:100%;
+        height: 150px;
+        width: 150px;
+    }
+    .car-item:hover {
+    width: 800px;
+        height: 200px;
+        transition: ease-in-out 2s;
+        border: 3px solid #eee;
+        box-shadow: black;
+    }
+    .base {
+        background: #007b5e;
+        opacity: .8%;
+        padding: 25px;
+        position: fixed;
+        bottom: 0;
+        display: flex;
+        color: white;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        overflow-y: hidden;
 
+    }
 
-
-
-
-
-
-
-
-
+.base:hover {
+    opacity: 1;
+    transition: ease-in-out 2s;
+    border: whitesmoke 7px;
+}
 
 
 </style>
@@ -112,14 +144,14 @@
 </nav>
 <div data-spy="scroll" data-target="#navbar-example2" data-offset="0" class="scrollspy-example">
     <h2>Listings for:</h2>
-    <h4 id="verse1">2002 Toyota Camery</h4>
+    <h4 class="car-one" id="verse1">2002 Toyota Camery</h4>
     <p>157 to 192 hp</p>
     <p>2.4 L 4-cylinder, 3.0 L V6</p>
     <p>4-speed automatic, 5-speed manual</p>
-    <h4 id="verse2">2007 Toyota Tacoma</h4>
+    <h4 class="car-two" id="verse2">2007 Toyota Tacoma</h4>
     <p>Horsepower: ? to ? hp</p>
     <p>MPG: Up to ? city / ? highway</p>
-    <h4 id="verse3">2015 toyota tundra</h4>
+    <h4 class="car-three" id="verse3">2015 toyota tundra</h4>
     <p>Horsepower: 310 to 381 hp</p>
     <p>MPG: Up to 15 city / 19 highway</p>
     <p>Engine: 4.6 L V8, 5.7 L V8</p>
@@ -141,33 +173,66 @@
 <div class="alert alert-success" role="alert">
     <strong>Hey User,</strong> <a href="/register"> Register</a> Or <a href="/login"> Log In</a> to see all content!!
 </div>
-<br>
+<br><br><br><br><br><br>
 <%--<img class="img-thumbnail" src="../img/cars.jpeg"  alt="Thumbnail image"><img class="img-thumbnail" src="../img/carr.mp4
 " alt="Thumbnail image"><img class="img-thumbnail" src="../img/car-one.jpg" alt="Thumbnail image">--%>
-<div class="container-fluid">
-    <div class="img-thumbnail" style="background: url(https://images.unsplash.com/photo-1608234493333-09825469ab3b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NTJ8fHRveW90YXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60) no-repeat  center ; /*background-size: contain*/;height: 150px; width:150px">
+<div  id="drop" class="base car-one">
+    <div class="car-item " style="background: url(https://static1.hotcarsimages.com/wordpress/wp-content/uploads/2020/10/image-17-e1601594471927.png?q=50&fit=crop&w=750&dpr=1.5
+) no-repeat  center ; /*background-size: contain*/;">
     </div>
-    <div class="img-thumbnail" style="background: url(https://images.unsplash.com/photo-1578102176342-dbaecee78bca?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NDN8fHRveW90YXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60) no-repeat  center; /*background-size: contain*/;height: 150px; width:150px">
+    <div class="car-item car-two" style="background: url(https://static1.hotcarsimages.com/wordpress/wp-content/uploads/2020/10/image-15.png?q=50&fit=crop&w=750&dpr=1.5) no-repeat  center; /*background-size: contain*/;">
     </div>
-    <div class="img-thumbnail" style="background: url(https://images.unsplash.com/photo-1618609740315-de8a9088ea77?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NDJ8fHRveW90YXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60) no-repeat  center; /*background-size: contain*/;height: 150px; width:150px">
+    <div class="car-item" style="background: url(https://static1.hotcarsimages.com/wordpress/wp-content/uploads/2020/10/image-13.png?q=50&fit=crop&w=750&dpr=1.5) no-repeat  center; /*background-size: contain*/;">
     </div>
-    <div class="img-thumbnail" style="background: url(https://images.unsplash.com/photo-1626072557464-90403d788e8d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTR8fHRveW90YXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60) no-repeat  center; /*background-size: contain*/;height: 150px; width:150px">
+    <div class="car-item" style="background: url(https://static1.hotcarsimages.com/wordpress/wp-content/uploads/2020/10/image-12.png?q=50&fit=crop&w=750&dpr=1.5) no-repeat  center; /*background-size: contain*/;">
     </div>
-    <div class="img-thumbnail" style="background: url(https://images.unsplash.com/flagged/photo-1564153296137-400b51e1ff6d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fHRveW90YXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60) no-repeat  center; /*background-size: contain*/;height: 150px; width:150px">
+    <div class="car-item" style="background: url(https://static1.hotcarsimages.com/wordpress/wp-content/uploads/2020/10/image-10.png?q=50&fit=crop&w=750&dpr=1.5
+) no-repeat  center; /*background-size: contain*/;">
     </div>
-    <div class="img-thumbnail" style="background: url(https://images.unsplash.com/photo-1638618164682-12b986ec2a75?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTN8fHRveW90YXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60) no-repeat  center; /*background-size: contain*/;height: 150px; width:150px">
+    <div class="car-item" style="background: url(https://static1.hotcarsimages.com/wordpress/wp-content/uploads/2020/10/image-8-e1601593726138.png?q=50&fit=crop&w=750&dpr=1.5) no-repeat  center; /*background-size: contain*/;">
     </div>
-    <div class="img-thumbnail" style="background: url(https://images.unsplash.com/photo-1559416523-140ddc3d238c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8dG95b3RhfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60) no-repeat  center; /*background-size: contain*/;height: 150px; width:150px">
+    <div class="car-item" style="background: url(https://static1.hotcarsimages.com/wordpress/wp-content/uploads/2020/10/image-6-e1601593079167.png?q=50&fit=crop&w=750&dpr=1.5) no-repeat  center; /*background-size: contain*/;">
     </div>
-    <div class="img-thumbnail" style="background: url(https://images.unsplash.com/photo-1629886031229-07b29e675653?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTZ8fHRveW90YSUyMHN1cHJhfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=600&q=60) no-repeat  center; /*background-size: contain*/;height: 150px; width:150px">
+    <div class="car-item" style="background: url(https://static1.hotcarsimages.com/wordpress/wp-content/uploads/2020/10/image-5-e1601592843908.png?q=50&fit=crop&w=750&dpr=1.5
+) no-repeat  center ; /*background-size: contain*/;">
     </div>
-    <div class="img-thumbnail" style="background: url(https://images.unsplash.com/photo-1618312980096-873bd19759a0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80) no-repeat  center; /*background-size: contain*/;height: fit-content; width:fit-content">
+    <div class="car-item" style="background: url(https://static1.hotcarsimages.com/wordpress/wp-content/uploads/2020/10/image-3-e1601592524981.png?q=50&fit=crop&w=750&dpr=1.5
+) no-repeat  center; /*background-size: contain*/;">
     </div>
-    <div class="img-thumbnail" style="background: url(https://images.unsplash.com/photo-1627008119197-6889fd74266a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTl8fHRveW90YSUyMHN1cHJhfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=600&q=60) no-repeat  center; /*background-size: contain*/;height: 150px; width:150px">
+    <div class="car-item" style="background: url(https://static1.hotcarsimages.com/wordpress/wp-content/uploads/2020/10/image-1.png?q=50&fit=crop&w=750&dpr=1.5
+) no-repeat  center; /*background-size: contain*/; ">
     </div>
 </div>
 
-</body>
+
+<script>
+    $("car-1").click(function () {
+        $("li").css({"font-weight":"bolder", "color":"brown"})
+    });
+    $("car-2").click(function () {
+        $("li").css({"font-weight":"bolder", "color":"brown"})
+    });
+    $("car-3").click(function () {
+        $("li").css({"font-weight":"bolder", "color":"brown"})
+    });
+    /*Will Continue after functionality*/
+
+    var car = document.getElementsByClassName("car-one");
+    car.addEventListener('click', clicker );
+
+    function clicker() {
+        $("car-two").css({"font-weight":"bolder", "color":"brown"})
+    }
+    document.onscroll = function() {
+        if (window.innerHeight + window.scrollY > document.body.clientHeight) {
+            document.getElementById('drop').style.display='none';
+        }
+    }
+
+</script>
+<br><br><br><br><br><br><br>
 <jsp:include page="/WEB-INF/partials/footer.jsp" />
+</body>
+
 
 </html>
