@@ -19,17 +19,21 @@
         <h2>${ad.title}</h2>
         <p>${ad.description}</p>
         <p hidden name="id">${ad.id}</p>
-        <a href="/ads/edit?id=${ad.id}"><button  class="btn btn-success">Edit</button></a>
-        <a href="/ads/delete"><button class="btn btn-danger">Delete</button></a>
+        <a href="/ads/edit?id=${ad.id}"><input class="btn btn-success" type="submit" value="Edit"/></a>
+
+        <form action="/ads/delete" method="POST">
+            <input type="hidden" name="ad_id" value="${ad.id}" />
+            <input class="btn btn-danger" value="Delete" type="submit" onclick="return deleteAd()" />
+        </form>
     </div>
 
 <%--    USER DISPLAY--%>
     <div class="card">
         <h2>Seller Information</h2>
         <div class="card-body">
-<%--            <p>Date Posted: ${ad.date}</p>--%>
         </div>
     </div>
+
     <%--AD DISPLAY--%>
     <div class="card">
         <h4>Title: </h4>
@@ -43,5 +47,20 @@
     </div>
 
 </c:forEach>
+
+    <script>
+
+        function deleteAd() {
+            var userConfirm = confirm("Do you really want to delete this ad?");
+            if (!userConfirm) {
+                return false;
+            } else {
+                this.$('.deleteBtn').submit();
+            }
+        }
+
+    </script>
+    <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+            crossorigin="anonymous"></script>
 </body>
 </html>

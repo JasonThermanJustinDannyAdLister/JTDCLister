@@ -2,7 +2,6 @@ package dao;
 import models.Ad;
 import com.mysql.cj.jdbc.Driver;
 import models.Config;
-import models.User;
 
 import java.sql.*;
 import java.util.ArrayList;
@@ -65,11 +64,11 @@ public class MySQLAdsDao implements Ads {
         }
     }
 
-    public void delete(String id) {
+    public void delete(Long id) {
         try {
-            String deleteQry = "DELETE FROM  ads WHERE  id = ?";
-            PreparedStatement stmt = connection.prepareStatement(deleteQry);
-            stmt.setLong(1, Long.parseLong(id));
+            String deleteQry = "DELETE FROM ads WHERE id = ?";
+            PreparedStatement stmt = connection.prepareStatement(deleteQry, Statement.RETURN_GENERATED_KEYS);
+            stmt.setLong(1, id);
             stmt.executeUpdate();
         } catch (SQLException e) {
             throw new RuntimeException("Error deleting a new ad.", e);
@@ -90,7 +89,6 @@ public class MySQLAdsDao implements Ads {
         }
 
     }
-
 
     private Ad extractAd(ResultSet rs) throws SQLException {
         return new Ad(
