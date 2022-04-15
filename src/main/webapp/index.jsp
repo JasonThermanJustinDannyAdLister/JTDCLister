@@ -9,17 +9,14 @@
         #body{
             background-color: lightgray;
         }
-
         #main_header{
             text-align: center;
             color: blue;
         }
-
         h1:hover {
             color: green;
             transition: ease-in-out 1ms;
         }
-
         .img-thumbnail {
             padding: 0.25rem;
             background-color: #fff;
@@ -31,7 +28,6 @@
             overflow: scroll;
             overflow-y: hidden;
         }
-
         .scrollspy-example {
             position: relative;
             height: 200px;
@@ -39,7 +35,6 @@
             overflow: auto;
             color: darkgreen;
         }
-
         @media only screen and (max-width: 412px) {
             .jumbotron {
                 height: 450px;
@@ -48,13 +43,11 @@
                 overflow-x: scroll;
             }
         }
-
         .gallery-container {
             width: 100%;
             height: 200px;
             overflow-y: auto;
         }
-
         .gallery {
             border: 1px solid black;
             height: 200px;
@@ -62,16 +55,13 @@
             overflow-x: hidden;
             overflow-y: scroll;
         }
-
         .thumbnails {
             width: 100%;
         }
-
         .gallery-container img {
             width: 200px;
             height: auto;
         }
-
         .thumbnails img {
             width: auto;
             height: 200px;
@@ -80,70 +70,68 @@
             border: 1px solid #ddd;
             margin: 1px;
         }
-          .scrollspy-example {
-        position: relative;
-        height: 200px;
-        margin-top: .5rem;
-        overflow: auto;
-        color: darkgreen;
-    }
-    .scrollspy-example-two {
-        position: relative;
-        height: 150px;
-        overflow-y: hidden;
-        overflow-x: scroll;
-        color: darkgreen;
-    }
-    @media only screen and (max-width: 412px) {
-        .jumbotron {
-            height: 450px;
-            width: 100%;
+        .scrollspy-example {
+            position: relative;
+            height: 200px;
+            margin-top: .5rem;
+            overflow: auto;
+            color: darkgreen;
+        }
+        .scrollspy-example-two {
+            position: relative;
+            height: 150px;
             overflow-y: hidden;
             overflow-x: scroll;
+            color: darkgreen;
         }
-    }
-    .car-item {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin: 0 10px;
-    border: 3px solid #eee;
-    padding: 15px;
-    border-radius: 10px;
-    background: green;
-        max-width:100%;
-        max-height:100%;
-        height: 150px;
-        width: 150px;
-    }
-    .car-item:hover {
-    width: 800px;
-        height: 200px;
-        transition: ease-in-out 2s;
-        border: 3px solid #eee;
-        box-shadow: black;
-    }
-    .base {
-        background: #007b5e;
-        opacity: .8%;
-        padding: 25px;
-        position: fixed;
-        bottom: 0;
-        display: flex;
-        color: white;
-        width: 100%;
-        align-items: center;
-        justify-content: center;
-        overflow-y: hidden;
-
-    }
-
-.base:hover {
-    opacity: 1;
-    transition: ease-in-out 2s;
-    border: whitesmoke 7px;
-}
+        @media only screen and (max-width: 412px) {
+            .jumbotron {
+                height: 450px;
+                width: 100%;
+                overflow-y: hidden;
+                overflow-x: scroll;
+            }
+        }
+        .car-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin: 0 10px;
+            border: 3px solid #eee;
+            padding: 15px;
+            border-radius: 10px;
+            background: green;
+            max-width:100%;
+            max-height:100%;
+            height: 150px;
+            width: 150px;
+        }
+        .car-item:hover {
+            width: 800px;
+            height: 200px;
+            transition: ease-in-out 2s;
+            border: 3px solid #eee;
+            box-shadow: black;
+        }
+        .base {
+            background: #007b5e;
+            opacity: .8%;
+            padding: 25px;
+            position: fixed;
+            bottom: 0;
+            display: flex;
+            color: white;
+            width: 100%;
+            align-items: center;
+            justify-content: center;
+            overflow-y: hidden;
+        }
+        .base:hover {
+            opacity: 1;
+            transition: ease-in-out 2s;
+            border: whitesmoke 7px;
+        }
     </style>
 </head>
 <body id="body">
@@ -264,10 +252,8 @@
         $("li").css({"font-weight":"bolder", "color":"brown"})
     });
     /*Will Continue after functionality*/
-
     var car = document.getElementsByClassName("car-one");
     car.addEventListener('click', clicker );
-
     function clicker() {
         $("car-two").css({"font-weight":"bolder", "color":"brown"})
     }
@@ -276,7 +262,6 @@
             document.getElementById('drop').style.display='none';
         }
     }
-
 </script>
 <br><br><br><br><br><br><br>
 <jsp:include page="/WEB-INF/partials/footer.jsp" />

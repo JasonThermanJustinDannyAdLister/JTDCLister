@@ -65,32 +65,6 @@ public class MySQLAdsDao implements Ads {
         }
     }
 
-    @Override
-    public void editAd(String title, String description, Long newId) {
-
-    }
-
-    @Override
-    public List<Ad> allForUser(User user) {
-        return null;
-    }
-
-    @Override
-    public Ad getAdById(long id) {
-        return null;
-    }
-
-    @Override
-    public void deleteAd(Ad ad) {
-
-    }
-
-    @Override
-    public Long delete(Long adId) {
-        return null;
-    }
-
-
     public void delete(String id) {
         try {
             String deleteQry = "DELETE FROM  ads WHERE  id = ?";
@@ -101,7 +75,6 @@ public class MySQLAdsDao implements Ads {
             throw new RuntimeException("Error deleting a new ad.", e);
         }
     }
-
 
     public Ad attainAdId(long id) {
         String query = "SELECT * FROM ads WHERE id = ? LIMIT 1";
@@ -151,33 +124,11 @@ public class MySQLAdsDao implements Ads {
         }
     }
 
-    public List<Ad> sortAds() {
-        PreparedStatement stmt = null;
-        try {
-            stmt = connection.prepareStatement("SELECT * FROM ads ORDER BY date_created ASC");
-            ResultSet rs = stmt.executeQuery();
-            return createAdsFromResults(rs);
-        } catch (SQLException e) {
-            throw new RuntimeException("Error retrieving all ads.", e);
-        }
-    }
-
     public List<Ad> sortAds(long userId) {
         PreparedStatement stmt = null;
         try {
             stmt = connection.prepareStatement("SELECT * FROM ads WHERE user_id = ? ORDER BY date_created ASC");
             stmt.setLong(1, userId);
-            ResultSet rs = stmt.executeQuery();
-            return createAdsFromResults(rs);
-        } catch (SQLException e) {
-            throw new RuntimeException("Error retrieving all ads.", e);
-        }
-    }
-
-    public List<Ad> sortAdsAscending() {
-        PreparedStatement stmt = null;
-        try {
-            stmt = connection.prepareStatement("SELECT * FROM ads ORDER BY date_created DESC");
             ResultSet rs = stmt.executeQuery();
             return createAdsFromResults(rs);
         } catch (SQLException e) {
@@ -222,17 +173,6 @@ public class MySQLAdsDao implements Ads {
             throw new RuntimeException("Error finding a Ad by Title", e);
         }
     }
-
-    @Override
-    public void editAd(Ad ad) {
-
-    }
-
-    @Override
-    public void delete(long id) {
-
-    }
-
     @Override
     public Ad get(long i) {
         return null;

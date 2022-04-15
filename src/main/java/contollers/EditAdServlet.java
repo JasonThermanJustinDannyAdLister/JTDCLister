@@ -40,8 +40,6 @@ public class EditAdServlet extends HttpServlet {
         String newDescription = request.getParameter("newAdDescription");
         User user = (User) request.getSession().getAttribute("user");
 
-//        if (unauthorizedEdit(response, newAdId, user)) return;
-
         Ad editedAd = new Ad(
                 newAdId,
                 user.getId(),
