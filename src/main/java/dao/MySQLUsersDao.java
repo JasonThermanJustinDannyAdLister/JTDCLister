@@ -46,6 +46,7 @@ public class MySQLUsersDao implements Users {
             throwables.printStackTrace();
         }
     }
+
     @Override
     public User findByUsername(String username) {
         String query = "SELECT * FROM users WHERE username = ? LIMIT 1";
