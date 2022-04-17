@@ -63,6 +63,7 @@
     </footer>
 </blockquote>
 
-<jsp:include page="/WEB-INF/partials/footer.jsp" />
+
 </body>
+<jsp:include page="/WEB-INF/partials/footer.jsp" />
 </html>

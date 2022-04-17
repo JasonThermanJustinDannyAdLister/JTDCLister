@@ -14,10 +14,11 @@
         /*margin-bottom: 10px;*/
         text-transform: uppercase;
         background-color: #007b5e ;
-        background-color: #007b5e;
     }
     #navbar .navbar-brand{
         font-family: 'Press Start 2P', cursive;
+        text-transform: none;
+        padding-top: 17px ;
     }
     .navbar-collapse{
         text-align: center;
@@ -84,7 +85,7 @@
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <a class="navbar-brand" style="color: ghostwhite" href="https://jhconger.github.io/personal_website" target="_blank">JTDCode™</a>
+            <a class="navbar-brand" style="color: ghostwhite" href="https://github.com/JasonThermanJustinDannyAdLister" target="_blank">JTDCode™</a>
             <div class="collapse navbar-collapse" id="navbarTogglerDemo03" style="background: #007b5e; color: black">
                 <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
                     <li class="nav-item">
@@ -96,34 +97,31 @@
                     <li class="nav-item">
                         <a class="nav-link" href="/logout">Logout</a>
                     </li>
-<%--                    <li class="nav-item">--%>
-<%--                        <a class="nav-link" href="">Home <span class="sr-only">(current)</span></a>--%>
-<%--                        <a class="nav-link" href="home.jsp">Home<span class="sr-only">(current)</span></a>--%>
-<%--                    </li>--%>
                     <li class="nav-item">
                         <a class="nav-link" href="/profile">Profile</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="/ads/create">Create Ads</a>
                     </li>
-                    <li class="nav-item dropdown dmenu">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/ads">Ads</a>
                     </li>
-                    <li class="nav-item dropdown dmenu">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">About Us</a>
-                        <div class="dropdown-menu sm-menu">
+<%--                    <li class="nav-item dropdown dmenu">--%>
+<%--                    </li>--%>
+<%--                    <li class="nav-item dropdown dmenu">--%>
+<%--                        <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">About Us</a>--%>
+<%--                        <div class="dropdown-menu sm-menu">--%>
 
-                            <a class="dropdown-item" href="/ads">Ads</a>
+<%--                            <a class="dropdown-item" href="/ads">Ads</a>--%>
 
-                            <a class="dropdown-item" href="#">Lorem ipsum</a>
-                            <a class="dropdown-item" href="#">Lorem ipsum dolor</a>
-                        </div>
-                    </li>
+<%--                            <a class="dropdown-item" href="#">Lorem ipsum</a>--%>
+<%--                            <a class="dropdown-item" href="#">Lorem ipsum dolor</a>--%>
+<%--                        </div>--%>
+<%--                    </li>--%>
 
                 </ul>
-                <form class="form-inline my-2 my-lg-0" action="/ads/searched" method="POST">
+                <form class="form-inline my-43 my-lg-0" action="/ads/searched" method="POST">
                     <input class="form-control mr-sm-2" type="search" placeholder="Search" name="search" aria-label="Search">
-                    <button class="btn btn-outline-default my-2 my-sm-0" type="submit">Search</button>
-<%--                    <button type="submit" class="btn btn-default"><span class="glyphicon glyphicon-search"></span></button>--%>
                 </form>
             </div>
         </nav>
@@ -131,35 +129,3 @@
 </section>
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<%--<nav class="navbar navbar-default">--%>
-<%--    <div class="container-fluid">--%>
-<%--        <!-- Brand and toggle get grouped for better mobile display -->--%>
-<%--        <div class="navbar-header">--%>
-<%--            <a class="navbar-brand" href="/ads">Adlister</a>--%>
-<%--        </div>--%>
-<%--        <ul class="nav navbar-nav navbar-right">--%>
-<%--            <li><a href="/register">Register</a></li>--%>
-<%--            <li><a href="/login">Login</a></li>--%>
-<%--            <li><a href="/profile">Profile</a></li>--%>
-<%--            <li><a href="/ads/create">Create Ads</a></li>--%>
-<%--            --%>
-<%--&lt;%&ndash;            <li><a href="/search_ads">Search</a></li>&ndash;%&gt;--%>
-<%--            </ul>--%>
-<%--    </div><!-- /.navbar-collapse -->--%>
-<%--    </div><!-- /.container-fluid -->--%>
-<%--</nav>--%>

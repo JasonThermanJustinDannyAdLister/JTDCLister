@@ -12,6 +12,9 @@
         background: #007b5e !important;
         box-shadow:0 12px 15px 0 rgba(0,0,0,.24),0 17px 50px 0 rgba(0,0,0,.19);
     }
+    p.h6 {
+        text-transform: none;
+    }
     #footer h5 {
         padding-left: 10px;
         border-left: 3px solid #eeeeee;
@@ -94,7 +97,7 @@
         </div>
         <div class="row">
             <div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-2 text-center text-white">
-                <p class="h6">&copy All Rights Reserved.<a class="text-green ml-2" href="https://jhconger.github.io/personal_website" target="_blank">JTDCode™</a></p>
+                <p class="h6">&copy All Rights Reserved.<a class="text-green ml-2" href="https://github.com/JasonThermanJustinDannyAdLister" target="_blank">JTDCode™</a></p>
             </div>
             </hr>
         </div>

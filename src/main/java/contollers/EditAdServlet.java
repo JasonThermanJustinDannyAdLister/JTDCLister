@@ -3,16 +3,13 @@ package contollers;
 import dao.DaoFactory;
 import models.Ad;
 import models.User;
-
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-
 import java.io.IOException;
 
-import static util.AccessControl.unauthorizedEdit;
 
 @WebServlet(name = "controllers.EditAdServlet", urlPatterns = "/ads/edit")
 public class EditAdServlet extends HttpServlet {
@@ -22,8 +19,6 @@ public class EditAdServlet extends HttpServlet {
         long newAdId = Long.parseLong(adId);
         System.out.println("adId = " + adId);
         User user = (User) request.getSession().getAttribute("user");
-//        if (unauthorizedEdit(response, newAdId, user)) return;
-        System.out.println("DaoFactory.getAdsDao().get(12L) = " + DaoFactory.getAdsDao().findById(12L));
         System.out.println("DaoFactory.getAdsDao().get(Long.parseLong(adId)) = " + DaoFactory.getAdsDao().findById(Long.parseLong(adId)));
         request.setAttribute("ad", DaoFactory.getAdsDao().findById(Long.parseLong(adId)));
         request.getRequestDispatcher("/WEB-INF/ads/edit.jsp").forward(request, response);

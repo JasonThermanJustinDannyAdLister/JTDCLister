@@ -7,7 +7,7 @@
     </jsp:include>
     <style>
         #body{
-            background-color: lightgray;
+            background-color: #007b5e;
         }
         #main_header{
             text-align: center;
@@ -263,7 +263,7 @@
         }
     }
 </script>
-<br><br><br><br><br><br><br>
+<%--<br><br><br><br><br><br><br>--%>
 <jsp:include page="/WEB-INF/partials/footer.jsp" />
 </body>
 
