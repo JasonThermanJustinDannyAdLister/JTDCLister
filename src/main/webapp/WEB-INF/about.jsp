@@ -180,11 +180,8 @@
 <body style="background-color: cadetblue ">
 <jsp:include page="/WEB-INF/partials/navbar.jsp"/>
 <h1>About Us</h1>
-
-
 <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
     <div class="carousel-inner" role="listbox">
-
         <div class="carousel-item active">
             <img class="d-block picture" src="https://ca.slack-edge.com/T029BRGN0-U02MN8EJRGW-36a7ee367d5a-512"
                  alt="900x400" data-holder-rendered="true" ;
@@ -221,10 +218,6 @@
 <h3 className='text-center display-4'>Portfolio</h3>
 <div className="scroll-container">
     <div className="gridscroll">
-        <%--        <div className="card-deck">--%>
-        <%--            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad aliquid, architecto cupiditate doloribus, error eum ipsum iure magnam nisi omnis, porro quia sed? Id labore laborum nisi officia quisquam, recusandae!--%>
-        <%--        <br>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad aliquid, architecto cupiditate doloribus--%>
-        <%--        </div>--%>
     </div>
 </div>
 <blockquote class="blockquote blockquote-reverse">
@@ -233,48 +226,6 @@
         <cite title="Source Title"></cite>
     </footer>
 </blockquote>
-<!-- Note a custom script is used to activate toasts:
-$('.toast').toast();
--->
-
-<%--<div class="toast fade show" role="alert" aria-live="assertive" aria-atomic="true">
-    <div class="toast-header">
-        <strong class="mr-auto">Justin Cogner</strong>
-        <small>11 mins ago</small>
-        <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
-            <span aria-hidden="true">×</span>
-        </button>
-    </div>
-    <div class="toast-body">
-        You can reach me at ---------
-    </div>
-</div>--%>
-
-<%--<div class="toast fade show" role="alert" aria-live="assertive" aria-atomic="true">
-    <div class="toast-header">
-        <strong class="mr-auto">Danny Turner</strong>
-        <small>11 mins ago</small>
-        <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
-            <span aria-hidden="true">×</span>
-        </button>
-    </div>
-    <div class="toast-body">
-        You can reach me at ---------
-    </div>
-</div>--%>
-<%--    <div class="toast fade show" role="alert" aria-live="assertive" aria-atomic="true">
-        <div class="toast-header">
-            <strong class="mr-auto">Therman Haynes</strong>
-            <small>11 mins ago</small>
-            <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
-                <span aria-hidden="true">×</span>
-            </button>
-        </div>
-        <div class="toast-body">
-            You can reach me at ---------
-        </div>
-    </div>--%>
-
 <%--Mini Contact Navbar--%>
 <nav class="navbar navbar-expand-sm navbar-dark"><img
         src="https://ca.slack-edge.com/T029BRGN0-U02MUV5L150-39afa35a0e97-512"
@@ -300,20 +251,6 @@ $('.toast').toast();
         </div>
     </div>
 </nav>
-<%--<div class="toast fade show" role="alert" aria-live="assertive" aria-atomic="true">
-    <div class="toast-header">
-        <strong class="mr-auto">Jason Comstock</strong>
-        <small>11 mins ago</small>
-        <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
-            <span aria-hidden="true">×</span>
-        </button>
-    </div>
-    <div class="toast-body">
-        You can reach me at ---------
-    </div>
-</div>--%>
-
-<%--#2--%>
 <nav class="navbar navbar-expand-sm navbar-dark"><img
         src="https://ca.slack-edge.com/T029BRGN0-U02MN8EJRGW-36a7ee367d5a-512"
         data-src=url(https://ca.slack-edge.com/T029BRGN0-U02MUV5L150-39afa35a0e97-512" width="40" height="40"
@@ -323,8 +260,6 @@ $('.toast').toast();
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor02"
             aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation"><span
             class="navbar-toggler-icon"></span></button>
-
-
     <div class="end">
         <div class="collapse navbar-collapse" id="navbarColor02">
             <ul class="navbar-nav">
@@ -341,8 +276,6 @@ $('.toast').toast();
         </div>
     </div>
 </nav>
-<%--3--%>
-
 <nav class="navbar navbar-expand-sm navbar-dark"><img
         src="https://ca.slack-edge.com/T029BRGN0-U02MNG37LVC-4982245c9a26-512" width="40" height="40"
         class="d-inline-block align-top rounded-circle" alt=""> <a class="navbar-brand ml-2"
@@ -351,8 +284,6 @@ $('.toast').toast();
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor02"
             aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation"><span
             class="navbar-toggler-icon"></span></button>
-
-
     <div class="end">
         <div class="collapse navbar-collapse" id="navbarColor02">
             <ul class="navbar-nav">
@@ -371,14 +302,10 @@ $('.toast').toast();
 <%--Contact 4--%>
 <nav class="navbar navbar-expand-sm navbar-dark"><img
         src="https://ca.slack-edge.com/T029BRGN0-U02NJLUGJQY-5dc3c706fd6d-512" width="40" height="40"
-        class="d-inline-block align-top rounded-circle" alt=""> <a class="navbar-brand ml-2"
-                                                                   href="https://github.com/jhconger" data-abc="true">Justin
-    Hart Conger</a>
+        class="d-inline-block align-top rounded-circle" alt=""> <a class="navbar-brand ml-2" href="https://github.com/jhconger" data-abc="true">Justin Hart Conger</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor02"
             aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation"><span
             class="navbar-toggler-icon"></span></button>
-
-
     <div class="end">
         <div class="collapse navbar-collapse" id="navbarColor02">
             <ul class="navbar-nav">
@@ -411,7 +338,7 @@ $('.toast').toast();
                         src="https://ca.slack-edge.com/T029BRGN0-U02NJLUGJQY-5dc3c706fd6d-512" alt=""
                         class="rounded-circle" width="40" height="40">
                     <h4>Justin Conger</h4> <span> Software Developer, Musician </span> <br>
-                    <p>An Army Solder, who after his service found a passion for coding and problem solving with
+                    <p>An Army Solder, who after his service, found a passion for coding and problem solving with
                         ninja-nuity.</p>
                 </div>
                 <div class="comment mt-4 text-justify"><img
@@ -422,7 +349,6 @@ $('.toast').toast();
                     <p>A life learner of tech who after a career in networking found a passion for many sides of the
                         I.T. world.</p>
                 </div>
-
 
                 <div class="darker mt-4 text-justify"><img
                         src="https://ca.slack-edge.com/T029BRGN0-U02MNG37LVC-4982245c9a26-512" alt=""
