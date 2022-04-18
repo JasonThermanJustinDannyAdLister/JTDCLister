@@ -176,19 +176,19 @@
     <div class="carousel-inner" role="listbox">
 
         <div class="carousel-item active">
-            <img class="d-block w-100"  src="https://ca.slack-edge.com/T029BRGN0-U02MN8EJRGW-36a7ee367d5a-512" alt="900x400" data-holder-rendered="true" style="width: 80%!important;
+            <img class="d-block w-100"  src="https://ca.slack-edge.com/T029BRGN0-U02MN8EJRGW-36a7ee367d5a-512" alt="900x400" data-holder-rendered="true" style="width: 70%!important;
             height: 400px;">
         </div>
         <div class="carousel-item">
-            <img class="d-block w-100"  src="https://ca.slack-edge.com/T029BRGN0-U02NJLUGJQY-5dc3c706fd6d-512" data-src=url(https://ca.slack-edge.com/T029BRGN0-U02NJLUGJQY-5dc3c706fd6d-512) alt="900x400" data-holder-rendered="true" style="width: 80%!important;
+            <img class="d-block w-100"  src="https://ca.slack-edge.com/T029BRGN0-U02NJLUGJQY-5dc3c706fd6d-512" data-src=url(https://ca.slack-edge.com/T029BRGN0-U02NJLUGJQY-5dc3c706fd6d-512) alt="900x400" data-holder-rendered="true" style="width: 70%!important;
             height: 400px;">
         </div>
         <div class="carousel-item">
-            <img class="d-block w-100"  src="https://ca.slack-edge.com/T029BRGN0-U02MUV5L150-39afa35a0e97-512" data-src=url(https://ca.slack-edge.com/T029BRGN0-U02MUV5L150-39afa35a0e97-512) alt="900x400" data-holder-rendered="true" style="width: 80%!important;
+            <img class="d-block w-100"  src="https://ca.slack-edge.com/T029BRGN0-U02MUV5L150-39afa35a0e97-512" data-src=url(https://ca.slack-edge.com/T029BRGN0-U02MUV5L150-39afa35a0e97-512) alt="900x400" data-holder-rendered="true" style="width: 70%!important;
             height: 400px;">
         </div>
         <div class="carousel-item">
-            <img class="d-block w-100"  src="https://ca.slack-edge.com/T029BRGN0-U02MNG37LVC-4982245c9a26-512" data-src=url(https://ca.slack-edge.com/T029BRGN0-U02MNG37LVC-4982245c9a26-512) alt="900x400" data-holder-rendered="true" style="width: width: 80%!important;
+            <img class="d-block w-100"  src="https://ca.slack-edge.com/T029BRGN0-U02MNG37LVC-4982245c9a26-512" data-src=url(https://ca.slack-edge.com/T029BRGN0-U02MNG37LVC-4982245c9a26-512) alt="900x400" data-holder-rendered="true" style="width: width: 70%!important;
             height: 400px;">
         </div>
     </div>
@@ -374,12 +374,12 @@ $('.toast').toast();
 </section>
 <jsp:include page="/WEB-INF/partials/footer.jsp" />
 <script>
-/*    $("#post").click(function () {
+    $("#post").click(function () {
         $('body').append(" <div class="darker mt-4 text-justify"> <img src="https://ca.slack-edge.com/T029BRGN0-U02MNG37LVC-4982245c9a26-512" alt="" class="rounded-circle" width="40" height="40">
             <h4>Danielle Turner</h4> <span> Software Developer </span> <br>
             <p>A Navy Sailor, who after consectetur adipisicing elit. Accusamus numquam assumenda hic aliquam vero sequi velit molestias doloremque molestiae dicta?</p>
         </div>")
-    });*/
+    });
 
 
 
