@@ -136,79 +136,79 @@
 </head>
 <body id="body">
 <jsp:include page="/WEB-INF/partials/navbar.jsp" />
-<div class="alert alert-success" role="alert">
-    <strong>Try This!</strong> 🎮  Insert Konami Code🎮
-</div>
+<%--<div class="alert alert-success" role="alert">--%>
+<%--    <strong>Try This!</strong> 🎮  Insert Konami Code🎮--%>
+<%--</div>--%>
 
 <div id="main_header" class="container-fluid ">
     <h1 class="#" style="font-family: 'Press Start 2P'">"Welcome to the Yota-Lister!"</h1>
 </div>
 
-<div class="jumbotron" style="background: url(https://images.unsplash.com/photo-1618312980096-873bd19759a0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80) no-repeat  center fixed; /*background-size: contain*/;height: 400px; width:100% ">
+<div class="jumbotron" style="background: url(https://slack-imgs.com/?c=1&o1=ro&url=https%3A%2F%2Fstatic1.hotcarsimages.com%2Fwordpress%2Fwp-content%2Fuploads%2F2020%2F10%2FToyota-MR2-TTE-Turbo-1-e1601602399517.jpg) no-repeat  center fixed; /*background-size: contain*/;height: 100%; width:100% ">
 </div>
 
 
-<div class="container">
-    <div class="row">
-        <div class="col-lg-3 col-md-6">
-            <p>The Yota-nation was taken by storm when magnam nost reprehenderit. Inventore repellat eum facilis illum dolor doloribus, eius quibusdam suscipit delectus vitae. Explicabo beatae vitae quos laborum expedita hic, maiores ipsa eaque? Nobis repudiandae!</p>
-        </div>
-        <div class="col-lg-3 col-md-6">
-            <p>As senior investors in Yota begin to see MASSIVE GAINS in the 3rd and 4th quarter. The question still remains whether they can maintain this momentum. Illo odit atque dolore corporis vero? Voluptatum cupiditate quisquam perspiciatis obcaecati neque.</p>
-        </div>
-        <div class="col-lg-3 col-md-6">
-            <p>GREAT MERGE between Yota and Old CEO's rival company, laboriosam distinctio distinctio est blanditiis vitae laudantium dolore? Tempore doloremque aspernatur repellat consectetur sit vero velit possimus suscipit? Odit doloremque?</p>
-        </div>
-        <div class="col-lg-3 col-md-6">
-            <p>There's never been a greater time to view a Toyota add! Totam suscipit possimus deserunt adipisci beatae? Mollitia explicabo voluptates hic delectus voluptates commodi necessitatibus perferendis. Rem ipsam itaque illo perspiciatis illo doloribus. Enim iste.</p>
-        </div>
-    </div>
-</div>
+<%--<div class="container">--%>
+<%--    <div class="row">--%>
+<%--        <div class="col-lg-3 col-md-6">--%>
+<%--            <p>The Yota-nation was taken by storm when magnam nost reprehenderit. Inventore repellat eum facilis illum dolor doloribus, eius quibusdam suscipit delectus vitae. Explicabo beatae vitae quos laborum expedita hic, maiores ipsa eaque? Nobis repudiandae!</p>--%>
+<%--        </div>--%>
+<%--        <div class="col-lg-3 col-md-6">--%>
+<%--            <p>As senior investors in Yota begin to see MASSIVE GAINS in the 3rd and 4th quarter. The question still remains whether they can maintain this momentum. Illo odit atque dolore corporis vero? Voluptatum cupiditate quisquam perspiciatis obcaecati neque.</p>--%>
+<%--        </div>--%>
+<%--        <div class="col-lg-3 col-md-6">--%>
+<%--            <p>GREAT MERGE between Yota and Old CEO's rival company, laboriosam distinctio distinctio est blanditiis vitae laudantium dolore? Tempore doloremque aspernatur repellat consectetur sit vero velit possimus suscipit? Odit doloremque?</p>--%>
+<%--        </div>--%>
+<%--        <div class="col-lg-3 col-md-6">--%>
+<%--            <p>There's never been a greater time to view a Toyota add! Totam suscipit possimus deserunt adipisci beatae? Mollitia explicabo voluptates hic delectus voluptates commodi necessitatibus perferendis. Rem ipsam itaque illo perspiciatis illo doloribus. Enim iste.</p>--%>
+<%--        </div>--%>
+<%--    </div>--%>
+<%--</div>--%>
 
-<nav id="navbar-example2" class="navbar navbar-dark bg-dark">
-    <h3 class="navbar-brand">Generations Of Toyota</h3>
-    <ul class="nav nav-pills">
-        <li class="nav-item"><a class="nav-link" href="#verse1">1990 - 1995</a></li>
-        <li class="nav-item"><a class="nav-link" href="#verse2">1995 - 2000</a></li>
-        <li class="nav-item"><a class="nav-link" href="#verse3">2000 - 2005</a></li>
-        <li class="nav-item"><a class="nav-link" href="#verse4">2005 - 2010</a></li>
-        <li class="nav-item"><a class="nav-link" href="#verse5">2010 - 2015</a></li>
-        <li class="nav-item"><a class="nav-link" href="#verse6">2015 - 2020</a></li>
-    </ul>
-</nav>
-<div data-spy="scroll" data-target="#navbar-example2" data-offset="0" class="scrollspy-example">
-    <h2>Listings for:</h2>
+<%--<nav id="navbar-example2" class="navbar navbar-dark bg-dark">--%>
+<%--    <h3 class="navbar-brand">Generations Of Toyota</h3>--%>
+<%--    <ul class="nav nav-pills">--%>
+<%--        <li class="nav-item"><a class="nav-link" href="#verse1">1990 - 1995</a></li>--%>
+<%--        <li class="nav-item"><a class="nav-link" href="#verse2">1995 - 2000</a></li>--%>
+<%--        <li class="nav-item"><a class="nav-link" href="#verse3">2000 - 2005</a></li>--%>
+<%--        <li class="nav-item"><a class="nav-link" href="#verse4">2005 - 2010</a></li>--%>
+<%--        <li class="nav-item"><a class="nav-link" href="#verse5">2010 - 2015</a></li>--%>
+<%--        <li class="nav-item"><a class="nav-link" href="#verse6">2015 - 2020</a></li>--%>
+<%--    </ul>--%>
+<%--</nav>--%>
+<%--<div data-spy="scroll" data-target="#navbar-example2" data-offset="0" class="scrollspy-example">--%>
+<%--    <h2>Listings for:</h2>--%>
 
-    <h4 class="car-one" id="verse1">2002 Toyota Camery</h4>
-    <p>157 to 192 hp</p>
-    <p>2.4 L 4-cylinder, 3.0 L V6</p>
-    <p>4-speed automatic, 5-speed manual</p>
-    <h4 class="car-two" id="verse2">2007 Toyota Tacoma</h4>
-    <p>Horsepower: ? to ? hp</p>
-    <p>MPG: Up to ? city / ? highway</p>
-    <h4 class="car-three" id="verse3">2015 toyota tundra</h4>
+<%--    <h4 class="car-one" id="verse1">2002 Toyota Camery</h4>--%>
+<%--    <p>157 to 192 hp</p>--%>
+<%--    <p>2.4 L 4-cylinder, 3.0 L V6</p>--%>
+<%--    <p>4-speed automatic, 5-speed manual</p>--%>
+<%--    <h4 class="car-two" id="verse2">2007 Toyota Tacoma</h4>--%>
+<%--    <p>Horsepower: ? to ? hp</p>--%>
+<%--    <p>MPG: Up to ? city / ? highway</p>--%>
+<%--    <h4 class="car-three" id="verse3">2015 toyota tundra</h4>--%>
 
 
-    <p>Horsepower: 310 to 381 hp</p>
-    <p>MPG: Up to 15 city / 19 highway</p>
-    <p>Engine: 4.6 L V8, 5.7 L V8</p>
-    <h4 id="verse4">2020 toyota corolla</h4>
-    <p>MPG: Up to 31 city / 40 highway</p>
-    <p>Horsepower: 139 to 169 hp</p>
-    <p>Engine: 1.8 L 4-cylinder, 2.0 L 4-cylinder</p>
-    <h4 id="verse5">2022 Toyota Tundra</h4>
-    <p>Horsepower: 348 to 389 hp</p>
-    <p>MPG: Up to 18 city / 24 highway</p>
-    <h4 id="verse6">2022 Toyota RAV4 XLE Premium</h4>
-    <p>Horsepower: 203 hp</p>
-    <p>MPG: Up to 27 city / 35 highway</p>
-</div>
+<%--    <p>Horsepower: 310 to 381 hp</p>--%>
+<%--    <p>MPG: Up to 15 city / 19 highway</p>--%>
+<%--    <p>Engine: 4.6 L V8, 5.7 L V8</p>--%>
+<%--    <h4 id="verse4">2020 toyota corolla</h4>--%>
+<%--    <p>MPG: Up to 31 city / 40 highway</p>--%>
+<%--    <p>Horsepower: 139 to 169 hp</p>--%>
+<%--    <p>Engine: 1.8 L 4-cylinder, 2.0 L 4-cylinder</p>--%>
+<%--    <h4 id="verse5">2022 Toyota Tundra</h4>--%>
+<%--    <p>Horsepower: 348 to 389 hp</p>--%>
+<%--    <p>MPG: Up to 18 city / 24 highway</p>--%>
+<%--    <h4 id="verse6">2022 Toyota RAV4 XLE Premium</h4>--%>
+<%--    <p>Horsepower: 203 hp</p>--%>
+<%--    <p>MPG: Up to 27 city / 35 highway</p>--%>
+<%--</div>--%>
 
-<div class="alert alert-success" role="alert">
-    <strong>Hey User,</strong> <a href="/register"> Register</a> Or <a href="/login"> Log In</a> to see all content!!
-</div>
+<%--<div class="alert alert-success" role="alert">--%>
+<%--    <strong>Hey User,</strong> <a href="/register"> Register</a> Or <a href="/login"> Log In</a> to see all content!!--%>
+<%--</div>--%>
 
-<br><br><br><br><br><br>
+<%--<br><br><br><br><br><br>--%>
 <%--<img class="img-thumbnail" src="../img/cars.jpeg"  alt="Thumbnail image"><img class="img-thumbnail" src="../img/carr.mp4
 " alt="Thumbnail image"><img class="img-thumbnail" src="../img/car-one.jpg" alt="Thumbnail image">--%>
 <div  id="drop" class="base car-one">
