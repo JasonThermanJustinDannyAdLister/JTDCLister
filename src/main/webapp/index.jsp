@@ -183,12 +183,12 @@
 <jsp:include page="/WEB-INF/partials/navbar.jsp" />
 
 
-<div class="alert alert-success alert-dismissible fade show" role="alert">
-    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-        <span aria-hidden="true">×</span>
-    </button>
-    <strong>Try This!</strong> 🎮  Insert Konami Code🎮
-</div>
+<%--<div class="alert alert-success alert-dismissible fade show" role="alert">--%>
+<%--    <button type="button" class="close" data-dismiss="alert" aria-label="Close">--%>
+<%--        <span aria-hidden="true">×</span>--%>
+<%--    </button>--%>
+<%--&lt;%&ndash;    <strong>Try This!</strong> 🎮  Insert Konami Code🎮&ndash;%&gt;--%>
+<%--</div>--%>
 
 
 <div id="main_header" class="container-fluid ">
