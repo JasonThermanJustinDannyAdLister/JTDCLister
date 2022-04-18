@@ -15,13 +15,13 @@
             width: 100%
         }
 
-        @media(min-width:568px) {
+        @media (min-width: 568px) {
             .end {
                 margin-left: auto
             }
         }
 
-        @media(max-width:768px) {
+        @media (max-width: 768px) {
             #post {
                 width: 100%
             }
@@ -149,21 +149,31 @@
             padding: 20px;
             color: ghostwhite;
         }
-        /*.d-block {
 
-        }*/
+        .d-block {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+
+        }
+
         h1 {
 
         }
+
         h1:hover {
             color: green;
         }
-        .carousel-inner>.active {
-            left: 11%;
+
+        .carousel-inner > .active {
+            left: 35%;
         }
-        .w-100 {
-            width: 80%!important;
-            height: 400px;
+
+        .picture {
+            justify-content: center;
+            display: flex;
+            flex-direction: row;
+
         }
     </style>
 </head>
@@ -176,20 +186,27 @@
     <div class="carousel-inner" role="listbox">
 
         <div class="carousel-item active">
-            <img class="d-block w-100"  src="https://ca.slack-edge.com/T029BRGN0-U02MN8EJRGW-36a7ee367d5a-512" alt="900x400" data-holder-rendered="true" style="width: 70%!important;
-            height: 400px;">
+            <img class="d-block picture" src="https://ca.slack-edge.com/T029BRGN0-U02MN8EJRGW-36a7ee367d5a-512"
+                 alt="900x400" data-holder-rendered="true" ;
+                 height: 400px;">
         </div>
         <div class="carousel-item">
-            <img class="d-block w-100"  src="https://ca.slack-edge.com/T029BRGN0-U02NJLUGJQY-5dc3c706fd6d-512" data-src=url(https://ca.slack-edge.com/T029BRGN0-U02NJLUGJQY-5dc3c706fd6d-512) alt="900x400" data-holder-rendered="true" style="width: 70%!important;
-            height: 400px;">
+            <img class="d-block picture" src="https://ca.slack-edge.com/T029BRGN0-U02NJLUGJQY-5dc3c706fd6d-512"
+                 data-src=url(https://ca.slack-edge.com/T029BRGN0-U02NJLUGJQY-5dc3c706fd6d-512) alt="900x400"
+                 data-holder-rendered="true" ;
+                 height: 400px;">
         </div>
         <div class="carousel-item">
-            <img class="d-block w-100"  src="https://ca.slack-edge.com/T029BRGN0-U02MUV5L150-39afa35a0e97-512" data-src=url(https://ca.slack-edge.com/T029BRGN0-U02MUV5L150-39afa35a0e97-512) alt="900x400" data-holder-rendered="true" style="width: 70%!important;
-            height: 400px;">
+            <img class="d-block picture" src="https://ca.slack-edge.com/T029BRGN0-U02MUV5L150-39afa35a0e97-512"
+                 data-src=url(https://ca.slack-edge.com/T029BRGN0-U02MUV5L150-39afa35a0e97-512) alt="900x400"
+                 data-holder-rendered="true" ;
+                 height: 400px;">
         </div>
         <div class="carousel-item">
-            <img class="d-block w-100"  src="https://ca.slack-edge.com/T029BRGN0-U02MNG37LVC-4982245c9a26-512" data-src=url(https://ca.slack-edge.com/T029BRGN0-U02MNG37LVC-4982245c9a26-512) alt="900x400" data-holder-rendered="true" style="width: width: 70%!important;
-            height: 400px;">
+            <img class="d-block picture" src="https://ca.slack-edge.com/T029BRGN0-U02MNG37LVC-4982245c9a26-512"
+                 data-src=url(https://ca.slack-edge.com/T029BRGN0-U02MNG37LVC-4982245c9a26-512) alt="900x400"
+                 data-holder-rendered="true" ;
+                 height: 400px;">
         </div>
     </div>
     <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -204,14 +221,14 @@
 <h3 className='text-center display-4'>Portfolio</h3>
 <div className="scroll-container">
     <div className="gridscroll">
-        <div className="card-deck">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad aliquid, architecto cupiditate doloribus, error eum ipsum iure magnam nisi omnis, porro quia sed? Id labore laborum nisi officia quisquam, recusandae!
-        <br>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad aliquid, architecto cupiditate doloribus
-        </div>
+        <%--        <div className="card-deck">--%>
+        <%--            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad aliquid, architecto cupiditate doloribus, error eum ipsum iure magnam nisi omnis, porro quia sed? Id labore laborum nisi officia quisquam, recusandae!--%>
+        <%--        <br>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad aliquid, architecto cupiditate doloribus--%>
+        <%--        </div>--%>
     </div>
 </div>
 <blockquote class="blockquote blockquote-reverse">
-    <p class="mb-0">Programing isn't about what you know; It's about what you can figure out.  </p>
+    <p class="mb-0">Programing isn't about what you know; It's about what you can figure out. </p>
     <footer class="blockquote-footer">Cris Pine
         <cite title="Source Title"></cite>
     </footer>
@@ -259,14 +276,26 @@ $('.toast').toast();
     </div>--%>
 
 <%--Mini Contact Navbar--%>
-<nav class="navbar navbar-expand-sm navbar-dark"> <img src="https://ca.slack-edge.com/T029BRGN0-U02MUV5L150-39afa35a0e97-512" data-src=url(https://ca.slack-edge.com/T029BRGN0-U02MUV5L150-39afa35a0e97-512" width="40" height="40" class="d-inline-block align-top rounded-circle" alt=""> <a class="navbar-brand ml-2" href="https://www.linkedin.com/in/jasonmcomstock/" data-abc="true">Jason Comstock</a> <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
+<nav class="navbar navbar-expand-sm navbar-dark"><img
+        src="https://ca.slack-edge.com/T029BRGN0-U02MUV5L150-39afa35a0e97-512"
+        data-src=url(https://ca.slack-edge.com/T029BRGN0-U02MUV5L150-39afa35a0e97-512" width="40" height="40"
+        class="d-inline-block align-top rounded-circle" alt=""> <a class="navbar-brand ml-2"
+                                                                   href="https://www.linkedin.com/in/jasonmcomstock/"
+                                                                   data-abc="true">Jason Comstock</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor02"
+            aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation"><span
+            class="navbar-toggler-icon"></span></button>
     <div class="end">
         <div class="collapse navbar-collapse" id="navbarColor02">
             <ul class="navbar-nav">
 
-                <li class="nav-item"> <a class="nav-link" href="https://github.com/JMComstock" data-abc="true">Github</a> </li>
-                <li class="nav-item "> <a class="nav-link" href="https://www.linkedin.com/in/jasonmcomstock/" data-abc="true">Linkdein</a> </li>
-                <li class="nav-item active"> <a class="nav-link mt-2" href="https://www.linkedin.com/in/jasonmcomstock/" data-abc="true" id="clicked">Contact<span class="sr-only">(current)</span></a> </li>
+                <li class="nav-item"><a class="nav-link" href="https://github.com/JMComstock" data-abc="true">Github</a>
+                </li>
+                <li class="nav-item "><a class="nav-link" href="https://www.linkedin.com/in/jasonmcomstock/"
+                                         data-abc="true">Linkdein</a></li>
+                <li class="nav-item active"><a class="nav-link mt-2" href="https://www.linkedin.com/in/jasonmcomstock/"
+                                               data-abc="true" id="clicked">Contact<span
+                        class="sr-only">(current)</span></a></li>
             </ul>
         </div>
     </div>
@@ -285,47 +314,82 @@ $('.toast').toast();
 </div>--%>
 
 <%--#2--%>
-<nav class="navbar navbar-expand-sm navbar-dark"> <img src="https://ca.slack-edge.com/T029BRGN0-U02MN8EJRGW-36a7ee367d5a-512" data-src=url(https://ca.slack-edge.com/T029BRGN0-U02MUV5L150-39afa35a0e97-512" width="40" height="40" class="d-inline-block align-top rounded-circle" alt=""> <a class="navbar-brand ml-2" href="https://www.linkedin.com/in/therman-haynes-4349b0198/" data-abc="true">Therman Haynes</a> <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
+<nav class="navbar navbar-expand-sm navbar-dark"><img
+        src="https://ca.slack-edge.com/T029BRGN0-U02MN8EJRGW-36a7ee367d5a-512"
+        data-src=url(https://ca.slack-edge.com/T029BRGN0-U02MUV5L150-39afa35a0e97-512" width="40" height="40"
+        class="d-inline-block align-top rounded-circle" alt=""> <a class="navbar-brand ml-2"
+                                                                   href="https://www.linkedin.com/in/therman-haynes-4349b0198/"
+                                                                   data-abc="true">Therman Haynes</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor02"
+            aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation"><span
+            class="navbar-toggler-icon"></span></button>
 
 
     <div class="end">
         <div class="collapse navbar-collapse" id="navbarColor02">
             <ul class="navbar-nav">
-                <li class="nav-item"> <a class="nav-link" href="#" data-abc="true"></a> </li>
-                <li class="nav-item"> <a class="nav-link" href="https://github.com/Therman116220" data-abc="true">Github</a> </li>
-                <li class="nav-item "> <a class="nav-link" href="https://www.linkedin.com/in/therman-haynes-4349b0198/" data-abc="true">Linkedin</a> </li>
-                <li class="nav-item active"> <a class="nav-link mt-2" href="https://www.linkedin.com/in/therman-haynes-4349b0198/" data-abc="true" id="clicked">Contact<span class="sr-only">(current)</span></a> </li>
+                <li class="nav-item"><a class="nav-link" href="#" data-abc="true"></a></li>
+                <li class="nav-item"><a class="nav-link" href="https://github.com/Therman116220"
+                                        data-abc="true">Github</a></li>
+                <li class="nav-item "><a class="nav-link" href="https://www.linkedin.com/in/therman-haynes-4349b0198/"
+                                         data-abc="true">Linkedin</a></li>
+                <li class="nav-item active"><a class="nav-link mt-2"
+                                               href="https://www.linkedin.com/in/therman-haynes-4349b0198/"
+                                               data-abc="true" id="clicked">Contact<span
+                        class="sr-only">(current)</span></a></li>
             </ul>
         </div>
     </div>
 </nav>
 <%--3--%>
 
-<nav class="navbar navbar-expand-sm navbar-dark"> <img src="https://ca.slack-edge.com/T029BRGN0-U02MNG37LVC-4982245c9a26-512" width="40" height="40" class="d-inline-block align-top rounded-circle" alt=""> <a class="navbar-brand ml-2" href="https://github.com/danielleturner" data-abc="true">Danielle Turner</a> <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
+<nav class="navbar navbar-expand-sm navbar-dark"><img
+        src="https://ca.slack-edge.com/T029BRGN0-U02MNG37LVC-4982245c9a26-512" width="40" height="40"
+        class="d-inline-block align-top rounded-circle" alt=""> <a class="navbar-brand ml-2"
+                                                                   href="https://github.com/danielleturner"
+                                                                   data-abc="true">Danielle Turner</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor02"
+            aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation"><span
+            class="navbar-toggler-icon"></span></button>
 
 
     <div class="end">
         <div class="collapse navbar-collapse" id="navbarColor02">
             <ul class="navbar-nav">
-                <li class="nav-item"> <a class="nav-link" href="#" data-abc="true"></a> </li>
-                <li class="nav-item"> <a class="nav-link" href="https://github.com/danielleturner" data-abc="true">Github</a> </li>
-                <li class="nav-item "> <a class="nav-link" href="https://www.linkedin.com/in/danielle-turner7/" data-abc="true">Linkedin</a> </li>
-                <li class="nav-item active"> <a class="nav-link mt-2" href="https://www.linkedin.com/in/danielle-turner7/" data-abc="true" id="clicked">Contact<span class="sr-only">(current)</span></a> </li>
+                <li class="nav-item"><a class="nav-link" href="#" data-abc="true"></a></li>
+                <li class="nav-item"><a class="nav-link" href="https://github.com/danielleturner"
+                                        data-abc="true">Github</a></li>
+                <li class="nav-item "><a class="nav-link" href="https://www.linkedin.com/in/danielle-turner7/"
+                                         data-abc="true">Linkedin</a></li>
+                <li class="nav-item active"><a class="nav-link mt-2"
+                                               href="https://www.linkedin.com/in/danielle-turner7/" data-abc="true"
+                                               id="clicked">Contact<span class="sr-only">(current)</span></a></li>
             </ul>
         </div>
     </div>
 </nav>
 <%--Contact 4--%>
-<nav class="navbar navbar-expand-sm navbar-dark"> <img src="https://ca.slack-edge.com/T029BRGN0-U02NJLUGJQY-5dc3c706fd6d-512" width="40" height="40" class="d-inline-block align-top rounded-circle" alt=""> <a class="navbar-brand ml-2" href="https://github.com/danielleturner" data-abc="true">Danielle Turner</a> <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
+<nav class="navbar navbar-expand-sm navbar-dark"><img
+        src="https://ca.slack-edge.com/T029BRGN0-U02NJLUGJQY-5dc3c706fd6d-512" width="40" height="40"
+        class="d-inline-block align-top rounded-circle" alt=""> <a class="navbar-brand ml-2"
+                                                                   href="https://github.com/jhconger" data-abc="true">Justin
+    Hart Conger</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor02"
+            aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation"><span
+            class="navbar-toggler-icon"></span></button>
 
 
     <div class="end">
         <div class="collapse navbar-collapse" id="navbarColor02">
             <ul class="navbar-nav">
-                <li class="nav-item"> <a class="nav-link" href="#" data-abc="true"></a> </li>
-                <li class="nav-item"> <a class="nav-link" href="https://github.com/jhconger" data-abc="true">Github</a> </li>
-                <li class="nav-item "> <a class="nav-link" href="https://www.linkedin.com/in/danielle-turner7/" data-abc="true">Linkedin</a> </li>
-                <li class="nav-item active"> <a class="nav-link mt-2" href="https://www.linkedin.com/in/jhconger/" data-abc="true" id="clicked">Contact<span class="sr-only">(current)</span></a> </li>
+                <li class="nav-item"><a class="nav-link" href="#" data-abc="true"></a></li>
+                <li class="nav-item"><a class="nav-link" href="https://github.com/jhconger" data-abc="true">Github</a>
+                </li>
+                <li class="nav-item "><a class="nav-link" href="https://www.linkedin.com/in/jhconger/" data-abc="true">Linkedin</a>
+                </li>
+                <li class="nav-item active"><a class="nav-link mt-2" href="https://www.linkedin.com/in/jhconger/"
+                                               data-abc="true" id="clicked">Contact<span
+                        class="sr-only">(current)</span></a></li>
             </ul>
         </div>
     </div>
@@ -336,55 +400,75 @@ $('.toast').toast();
         <div class="row">
             <div class="col-sm-5 col-md-6 col-12 pb-4">
                 <h1>Developers</h1>
-                <div class="comment mt-4 text-justify float-left"> <img src="https://ca.slack-edge.com/T029BRGN0-U02MUV5L150-39afa35a0e97-512" data-src=url(https://ca.slack-edge.com/T029BRGN0-U02MUV5L150-39afa35a0e97-512" alt="" class="rounded-circle" width="40" height="40">
+                <div class="comment mt-4 text-justify float-left"><img
+                        src="https://ca.slack-edge.com/T029BRGN0-U02MUV5L150-39afa35a0e97-512"
+                        data-src=url(https://ca.slack-edge.com/T029BRGN0-U02MUV5L150-39afa35a0e97-512" alt=""
+                        class="rounded-circle" width="40" height="40">
                     <h4>Jason Comstock</h4> <span> Software Developer </span> <br>
-                    <p>A U.S. Marine, who after his service found a passion for accusamus end development hic aliquam vero sequi velit molestias doloremque molestiae dicta?</p>
+                    <p>A U.S. Marine, who after his service found a passion for coding and creative problem solving.</p>
                 </div>
-                <div class="text-justify darker mt-4 float-right"> <img src="https://ca.slack-edge.com/T029BRGN0-U02NJLUGJQY-5dc3c706fd6d-512" alt="" class="rounded-circle" width="40" height="40">
-                    <h4>Justin Cogner</h4> <span> Software Developer, Musician </span> <br>
-                    <p>A Army Solder, who after his service found a passion for Accusamus numquam assumenda hic aliquam vero sequi velit molestias doloremque molestiae dicta?</p>
+                <div class="text-justify darker mt-4 float-right"><img
+                        src="https://ca.slack-edge.com/T029BRGN0-U02NJLUGJQY-5dc3c706fd6d-512" alt=""
+                        class="rounded-circle" width="40" height="40">
+                    <h4>Justin Conger</h4> <span> Software Developer, Musician </span> <br>
+                    <p>An Army Solder, who after his service found a passion for coding and problem solving with
+                        ninja-nuity.</p>
                 </div>
-                <div class="comment mt-4 text-justify"> <img src="https://ca.slack-edge.com/T029BRGN0-U02MN8EJRGW-36a7ee367d5a-512" data-src=url(https://ca.slack-edge.com/T029BRGN0-U02MUV5L150-39afa35a0e97-512" alt="" class="rounded-circle" width="40" height="40">
+                <div class="comment mt-4 text-justify"><img
+                        src="https://ca.slack-edge.com/T029BRGN0-U02MN8EJRGW-36a7ee367d5a-512"
+                        data-src=url(https://ca.slack-edge.com/T029BRGN0-U02MUV5L150-39afa35a0e97-512" alt=""
+                        class="rounded-circle" width="40" height="40">
                     <h4>Therman Haynes</h4> <span> Software Developer </span> <br>
-                    <p>A life learner of tech who after a career in networking found a passion for many sides of the I.T. world. Aliquam vero sequi velit molestias doloremque molestiae dicta?</p>
+                    <p>A life learner of tech who after a career in networking found a passion for many sides of the
+                        I.T. world.</p>
                 </div>
 
 
-                <div class="darker mt-4 text-justify"> <img src="https://ca.slack-edge.com/T029BRGN0-U02MNG37LVC-4982245c9a26-512" alt="" class="rounded-circle" width="40" height="40">
+                <div class="darker mt-4 text-justify"><img
+                        src="https://ca.slack-edge.com/T029BRGN0-U02MNG37LVC-4982245c9a26-512" alt=""
+                        class="rounded-circle" width="40" height="40">
                     <h4>Danielle Turner</h4> <span> Software Developer </span> <br>
-                    <p>A Navy Veteran, who after consectetur adipisicing elit. Accusamus numquam assumenda hic aliquam vero sequi velit molestias doloremque molestiae dicta?</p>
+                    <p>A Navy Veteran, who after completing service found an aptitude for problem solving through
+                        software development.</p>
                 </div>
             </div>
             <div class="col-lg-4 col-md-5 col-sm-4 offset-md-1 offset-sm-1 col-12 mt-4">
                 <form id="algin-form">
                     <div class="form-group">
-                        <h4>Leave a comment</h4> <label for="message">Message</label> <textarea name="msg" id="" msg cols="30" rows="5" class="form-control" style="background-color: black;"></textarea>
+                        <h4>Leave a comment</h4> <label>Message</label> <textarea name="msg" id="" msg cols="30"
+                                                                                  rows="5" class="form-control"
+                                                                                  style="background-color: black;"></textarea>
                     </div>
-                    <div class="form-group"> <label for="name">Name</label> <input type="text" name="name" id="fullname" class="form-control"> </div>
-                    <div class="form-group"> <label for="email">Email</label> <input type="text" name="email" id="email" class="form-control"> </div>
+                    <div class="form-group"><label>Name</label> <input type="text" name="name" id="fullname"
+                                                                       class="form-control"></div>
+                    <div class="form-group"><label for="email">Email</label> <input type="text" name="email" id="email"
+                                                                                    class="form-control"></div>
                     <div class="form-group">
-                        <p class="text-secondary">If you have a <a href="#" class="alert-link">gravatar account</a> your address will be used to display your profile picture.</p>
+                        <p class="text-secondary">If you have an <a href="#" class="alert-link">account with us</a> your
+                            address will be used to display your profile picture.</p>
                     </div>
-                    <div class="form-inline"> <input type="checkbox" name="check" id="checkbx" class="mr-1"> <label for="subscribe">Subscribe me to the newlettter</label> </div>
-                    <div class="form-group"> <button type="button" id="post" class="btn">Comment</button> </div>
+                    <div class="form-inline"><input type="checkbox" name="check" id="checkbx" class="mr-1"> <label>Subscribe
+                        me to the newslettter</label></div>
+                    <div class="form-group">
+                        <button type="button" id="post" class="btn">Comment</button>
+                    </div>
                 </form>
             </div>
         </div>
     </div>
 </section>
-<jsp:include page="/WEB-INF/partials/footer.jsp" />
+<jsp:include page="/WEB-INF/partials/footer.jsp"/>
 <script>
-    $("#post").click(function () {
-        $('body').append(" <div class="darker mt-4 text-justify"> <img src="https://ca.slack-edge.com/T029BRGN0-U02MNG37LVC-4982245c9a26-512" alt="" class="rounded-circle" width="40" height="40">
-            <h4>Danielle Turner</h4> <span> Software Developer </span> <br>
-            <p>A Navy Sailor, who after consectetur adipisicing elit. Accusamus numquam assumenda hic aliquam vero sequi velit molestias doloremque molestiae dicta?</p>
-        </div>")
-    });
-
+    // $("#post").click(function () {
+    //     $('body').append(" <div class="darker mt-4 text-justify"> <img src="https://ca.slack-edge.com/T029BRGN0-U02MNG37LVC-4982245c9a26-512" alt="" class="rounded-circle" width="40" height="40">
+    //         <h4>Danielle Turner</h4> <span> Software Developer </span> <br>
+    //         <p>A Navy Veteran, who after completing service found an aptitude for problem solving through software development.</p>
+    //         </div>")
+    // });
 
 
 </script>
 
 </body>
-<jsp:include page="/WEB-INF/partials/footer.jsp" />
+<jsp:include page="/WEB-INF/partials/footer.jsp"/>
 </html>

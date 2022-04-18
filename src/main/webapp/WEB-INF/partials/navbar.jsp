@@ -113,7 +113,9 @@
                     <li class="nav-item">
                         <a class="nav-link" href="/editUser">Edit User</a>
                     </li>
-
+                    <li class="nav-item">
+                        <a class="nav-link" href="/about">About Us</a>
+                    </li>
 
 <%--                    <li class="nav-item dropdown dmenu">--%>
 <%--                    </li>--%>
