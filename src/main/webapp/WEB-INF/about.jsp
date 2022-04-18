@@ -396,5 +396,4 @@
 </script>
 
 </body>
-<jsp:include page="/WEB-INF/partials/footer.jsp"/>
 </html>
