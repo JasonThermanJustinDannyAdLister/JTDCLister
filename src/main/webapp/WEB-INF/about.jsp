@@ -176,16 +176,20 @@
     <div class="carousel-inner" role="listbox">
 
         <div class="carousel-item active">
-            <img class="d-block w-100"  src="https://ca.slack-edge.com/T029BRGN0-U02MN8EJRGW-36a7ee367d5a-512" alt="900x400" data-holder-rendered="true" style="width: 800px; height: 400px;">
+            <img class="d-block w-100"  src="https://ca.slack-edge.com/T029BRGN0-U02MN8EJRGW-36a7ee367d5a-512" alt="900x400" data-holder-rendered="true" style="width: 80%!important;
+            height: 400px;">
         </div>
         <div class="carousel-item">
-            <img class="d-block w-100"  src="https://ca.slack-edge.com/T029BRGN0-U02NJLUGJQY-5dc3c706fd6d-512" data-src=url(https://ca.slack-edge.com/T029BRGN0-U02NJLUGJQY-5dc3c706fd6d-512) alt="900x400" data-holder-rendered="true" style="width: 800px; height: 400px;">
+            <img class="d-block w-100"  src="https://ca.slack-edge.com/T029BRGN0-U02NJLUGJQY-5dc3c706fd6d-512" data-src=url(https://ca.slack-edge.com/T029BRGN0-U02NJLUGJQY-5dc3c706fd6d-512) alt="900x400" data-holder-rendered="true" style="width: 80%!important;
+            height: 400px;">
         </div>
         <div class="carousel-item">
-            <img class="d-block w-100"  src="https://ca.slack-edge.com/T029BRGN0-U02MUV5L150-39afa35a0e97-512" data-src=url(https://ca.slack-edge.com/T029BRGN0-U02MUV5L150-39afa35a0e97-512) alt="900x400" data-holder-rendered="true" style="width: 800px; height: 400px;">
+            <img class="d-block w-100"  src="https://ca.slack-edge.com/T029BRGN0-U02MUV5L150-39afa35a0e97-512" data-src=url(https://ca.slack-edge.com/T029BRGN0-U02MUV5L150-39afa35a0e97-512) alt="900x400" data-holder-rendered="true" style="width: 80%!important;
+            height: 400px;">
         </div>
         <div class="carousel-item">
-            <img class="d-block w-100"  src="https://ca.slack-edge.com/T029BRGN0-U02MNG37LVC-4982245c9a26-512" data-src=url(https://ca.slack-edge.com/T029BRGN0-U02MNG37LVC-4982245c9a26-512) alt="900x400" data-holder-rendered="true" style="width: 800px; height: 400px;">
+            <img class="d-block w-100"  src="https://ca.slack-edge.com/T029BRGN0-U02MNG37LVC-4982245c9a26-512" data-src=url(https://ca.slack-edge.com/T029BRGN0-U02MNG37LVC-4982245c9a26-512) alt="900x400" data-holder-rendered="true" style="width: width: 80%!important;
+            height: 400px;">
         </div>
     </div>
     <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
