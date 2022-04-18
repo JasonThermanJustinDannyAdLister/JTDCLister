@@ -132,13 +132,64 @@
             transition: ease-in-out 2s;
             border: whitesmoke 7px;
         }
+
+    }
+    .car-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 10px;
+    border: 3px solid #eee;
+    padding: 15px;
+    border-radius: 10px;
+    background: green;
+        max-width:100%;
+        max-height:100%;
+        height: 150px;
+        width: 150px;
+    }
+    .car-item:hover {
+    width: 800px;
+        height: 200px;
+        transition: ease-in-out 2s;
+        border: 3px solid #eee;
+        box-shadow: black;
+    }
+    .base {
+        background: #007b5e;
+        opacity: .8%;
+        padding: 25px;
+        position: fixed;
+        bottom: 60px;
+        display: flex;
+        color: white;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        overflow-y: hidden;
+
+    }
+
+.base:hover {
+    opacity: 1;
+    transition: ease-in-out 2s;
+    border: whitesmoke 7px;
+}
+
     </style>
 </head>
 <body id="body">
 <jsp:include page="/WEB-INF/partials/navbar.jsp" />
-<%--<div class="alert alert-success" role="alert">--%>
-<%--    <strong>Try This!</strong> 🎮  Insert Konami Code🎮--%>
-<%--</div>--%>
+
+
+<div class="alert alert-success alert-dismissible fade show" role="alert">
+    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+        <span aria-hidden="true">×</span>
+    </button>
+    <strong>Try This!</strong> 🎮  Insert Konami Code🎮
+</div>
+
 
 <div id="main_header" class="container-fluid ">
     <h1 class="#" style="font-family: 'Press Start 2P'">"Welcome to the Yota-Lister!"</h1>
@@ -204,11 +255,17 @@
 <%--    <p>MPG: Up to 27 city / 35 highway</p>--%>
 <%--</div>--%>
 
-<%--<div class="alert alert-success" role="alert">--%>
-<%--    <strong>Hey User,</strong> <a href="/register"> Register</a> Or <a href="/login"> Log In</a> to see all content!!--%>
-<%--</div>--%>
 
-<%--<br><br><br><br><br><br>--%>
+<div class="alert alert-success alert-dismissible fade show" role="alert">
+    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+        <span aria-hidden="true">×</span>
+    </button>
+    <strong>Hey User,</strong> <a href="/register"> Register</a> Or <a href="/login"> Log In</a> to see all content!!
+</div>
+
+
+<br><br><br><br><br><br>
+
 <%--<img class="img-thumbnail" src="../img/cars.jpeg"  alt="Thumbnail image"><img class="img-thumbnail" src="../img/carr.mp4
 " alt="Thumbnail image"><img class="img-thumbnail" src="../img/car-one.jpg" alt="Thumbnail image">--%>
 <div  id="drop" class="base car-one">
