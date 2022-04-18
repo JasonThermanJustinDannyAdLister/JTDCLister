@@ -212,31 +212,40 @@
 <%--<img class="img-thumbnail" src="../img/cars.jpeg"  alt="Thumbnail image"><img class="img-thumbnail" src="../img/carr.mp4
 " alt="Thumbnail image"><img class="img-thumbnail" src="../img/car-one.jpg" alt="Thumbnail image">--%>
 <div  id="drop" class="base car-one">
-    <div class="car-item " style="background: url(https://static1.hotcarsimages.com/wordpress/wp-content/uploads/2020/10/image-17-e1601594471927.png?q=50&fit=crop&w=750&dpr=1.5
+    <div class="car-item 10" style="background: url(https://static1.hotcarsimages.com/wordpress/wp-content/uploads/2020/10/image-17-e1601594471927.png?q=50&fit=crop&w=750&dpr=1.5
 ) no-repeat  center ; /*background-size: contain*/;">
+        <a class="nav-link" href="/ads/individualAd?id=10">Toyota MR2 TTE Turbo</a>
     </div>
-    <div class="car-item car-two" style="background: url(https://static1.hotcarsimages.com/wordpress/wp-content/uploads/2020/10/image-15.png?q=50&fit=crop&w=750&dpr=1.5) no-repeat  center; /*background-size: contain*/;">
+    <div class="car-item 1" style="background: url(https://static1.hotcarsimages.com/wordpress/wp-content/uploads/2020/10/image-15.png?q=50&fit=crop&w=750&dpr=1.5) no-repeat  center; /*background-size: contain*/;">
+        <a class="nav-link" href="/ads/individualAd?id=9">Toyota SA</a>
     </div>
     <div class="car-item" style="background: url(https://static1.hotcarsimages.com/wordpress/wp-content/uploads/2020/10/image-13.png?q=50&fit=crop&w=750&dpr=1.5) no-repeat  center; /*background-size: contain*/;">
+        <a class="nav-link" href="/ads/individualAd?id=8">1997 Toyota Paseo Cabriolet</a>
     </div>
     <div class="car-item" style="background: url(https://static1.hotcarsimages.com/wordpress/wp-content/uploads/2020/10/image-12.png?q=50&fit=crop&w=750&dpr=1.5) no-repeat  center; /*background-size: contain*/;">
+        <a class="nav-link" href="/ads/individualAd?id=7">1994 Toyota Corolla TRD2000</a>
     </div>
     <div class="car-item" style="background: url(https://static1.hotcarsimages.com/wordpress/wp-content/uploads/2020/10/image-10.png?q=50&fit=crop&w=750&dpr=1.5
 ) no-repeat  center; /*background-size: contain*/;">
+        <a class="nav-link" href="/ads/individualAd?id=6">1959 Toyopet Crown</a>
     </div>
     <div class="car-item" style="background: url(https://static1.hotcarsimages.com/wordpress/wp-content/uploads/2020/10/image-8-e1601593726138.png?q=50&fit=crop&w=750&dpr=1.5) no-repeat  center; /*background-size: contain*/;">
+        <a class="nav-link" href="/ads/individualAd?id=5">Toyota 2000GT</a>
     </div>
     <div class="car-item" style="background: url(https://static1.hotcarsimages.com/wordpress/wp-content/uploads/2020/10/image-6-e1601593079167.png?q=50&fit=crop&w=750&dpr=1.5) no-repeat  center; /*background-size: contain*/;">
+        <a class="nav-link" href="/ads/individualAd?id=4">Toyota Mega Cruiser</a>
     </div>
     <div class="car-item" style="background: url(https://static1.hotcarsimages.com/wordpress/wp-content/uploads/2020/10/image-5-e1601592843908.png?q=50&fit=crop&w=750&dpr=1.5
 ) no-repeat  center ; /*background-size: contain*/;">
+        <a class="nav-link" href="/ads/individualAd?id=3">Toyota Sprinter Trueno Convertible</a>
     </div>
     <div class="car-item" style="background: url(https://static1.hotcarsimages.com/wordpress/wp-content/uploads/2020/10/image-3-e1601592524981.png?q=50&fit=crop&w=750&dpr=1.5
 ) no-repeat  center; /*background-size: contain*/;">
+        <a class="nav-link" href="/ads/individualAd?id=2">Toyota Origin</a>
     </div>
     <div class="car-item" style="background: url(https://static1.hotcarsimages.com/wordpress/wp-content/uploads/2020/10/image-1.png?q=50&fit=crop&w=750&dpr=1.5
 ) no-repeat  center; /*background-size: contain*/; ">
-
+        <a class="nav-link" href="/ads/individualAd?id=1">Toyota Sera</a>
     </div>
 </div>
 

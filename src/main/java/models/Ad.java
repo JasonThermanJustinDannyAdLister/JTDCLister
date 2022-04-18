@@ -8,13 +8,14 @@ public class Ad {
     private String description;
     private Date date_created;
     private String category;
+    private String image;
 
-
-    public Ad(long id, long userId, String title, String description) {
+    public Ad(long id, long userId, String title, String description, String image) {
         this.id = id;
         this.userId = userId;
         this.title = title;
         this.description = description;
+        this.image = image;
     }
 
     public Ad(long userId, String title, String description) {
@@ -31,6 +32,7 @@ public class Ad {
         this.description = description;
         this.date_created = date_created;
         this.category = name;
+
     }
 
 
@@ -87,4 +89,12 @@ public class Ad {
     public void setCategory(String category) {
         this.category = category;
     }
+    public String getImage() {
+        return image;
+    }
+
+    public void setImage(String image) {
+        this.image = image;
+    }
 }
+

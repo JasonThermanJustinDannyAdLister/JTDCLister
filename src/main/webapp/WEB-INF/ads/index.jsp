@@ -19,7 +19,8 @@
                 <a href="/ads/individualAd?id=${ad.id}" class="btn btn-success btn-lg my-3"
                    role="button" aria-pressed="true">Ad Page</a>
                 <c:if test="${sessionScope.user.username eq 'admin'}">
-                    <a href="${pageContext.request.contextPath}/ads/edit?id=${ad.id}"
+                    <a href="${pageContext.request.contextPath}/ads/edit?id=${ad.id}">
+                    <img class="indexPage" src="${ad.image}">
                        class="btn btn-info btn-lg my-3" role="button" aria-pressed="true">Edit</a>
                     <a href="${pageContext.request.contextPath}/ads/delete?id=${ad.id}"
                        class="btn btn-danger btn-lg my-3" role="button" aria-pressed="true">Delete</a>
