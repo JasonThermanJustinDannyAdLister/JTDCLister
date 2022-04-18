@@ -96,7 +96,8 @@ public class MySQLAdsDao implements Ads {
                 rs.getLong("id"),
                 rs.getLong("user_id"),
                 rs.getString("title"),
-                rs.getString("description")
+                rs.getString("description"),
+                rs.getString("image")
 
         );
     }
@@ -125,7 +126,7 @@ public class MySQLAdsDao implements Ads {
     public List<Ad> sortAds(long userId) {
         PreparedStatement stmt = null;
         try {
-            stmt = connection.prepareStatement("SELECT * FROM ads WHERE user_id = ? ORDER BY date_created ASC");
+            stmt = connection.prepareStatement("SELECT * FROM ads WHERE user_id = ? ORDER BY id ASC");
             stmt.setLong(1, userId);
             ResultSet rs = stmt.executeQuery();
             return createAdsFromResults(rs);
@@ -137,7 +138,7 @@ public class MySQLAdsDao implements Ads {
     public List<Ad> sortAdsAscending(long userId) {
         PreparedStatement stmt = null;
         try {
-            stmt = connection.prepareStatement("SELECT * FROM ads WHERE user_id = ? ORDER BY date_created DESC");
+            stmt = connection.prepareStatement("SELECT * FROM ads WHERE user_id = ? ORDER BY id DESC");
             stmt.setLong(1, userId);
             ResultSet rs = stmt.executeQuery();
             return createAdsFromResults(rs);

@@ -33,13 +33,15 @@ public class EditAdServlet extends HttpServlet {
         long newAdId = Long.parseLong(currentAdId);
         String newTitle = request.getParameter("newAdTitle");
         String newDescription = request.getParameter("newAdDescription");
+
         User user = (User) request.getSession().getAttribute("user");
 
         Ad editedAd = new Ad(
                 newAdId,
                 user.getId(),
                 newTitle,
-                newDescription
+                newDescription,
+                request.getParameter("img")
         );
         DaoFactory.getAdsDao().edit(editedAd);
         response.sendRedirect("/profile");

@@ -3,6 +3,7 @@ package dao;
 import com.mysql.cj.jdbc.Driver;
 import models.Config;
 import models.User;
+import util.Password;
 
 import java.sql.*;
 
@@ -48,6 +49,23 @@ public class MySQLUsersDao implements Users {
     }
 
     @Override
+    public boolean checkUsernameExists(String username) {
+
+        boolean usernameExists = false;
+        try {
+            PreparedStatement stmt = connection.prepareStatement("select * from users where username= ?");
+            stmt.setString(1, username);
+            ResultSet rs = stmt.executeQuery();
+            if (rs.next()) {
+                usernameExists = true;
+            }
+        }catch(Exception e){
+            System.out.println("SQL Exception: " + e.toString());
+        }
+        return usernameExists;
+    }
+
+    @Override
     public User findByUsername(String username) {
         String query = "SELECT * FROM users WHERE username = ? LIMIT 1";
         try {
@@ -83,20 +101,18 @@ public class MySQLUsersDao implements Users {
     }
 
 
-    public void replace(User user) {
-        String query = "UPDATE users SET username = ?, email = ?, password = ? WHERE id = ?";
+    public void edit(String username, String newUsername, String newPassword) {
+        String query = "UPDATE users SET username = ?, password = ? WHERE username = ?;";
         try {
-            PreparedStatement stmt = connection.prepareStatement(query);
-            stmt.setString(1, user.getUsername());
-            stmt.setString(2, user.getEmail());
-            stmt.setString(3, user.getPassword());
-            stmt.setLong(4, user.getId());
+            PreparedStatement stmt = connection.prepareStatement(query, Statement.RETURN_GENERATED_KEYS);
+            stmt.setString(1, newUsername);
+            stmt.setString(2, Password.hash(newPassword));
+            stmt.setString(3, username);
             stmt.executeUpdate();
         } catch (SQLException e) {
-            throw new RuntimeException("Unable to update profile", e);
+            throw new RuntimeException("Error creating new user", e);
         }
     }
-
     public User findByUserId(Long id) {
         String query = "SELECT * FROM users WHERE id = ?";
         try {

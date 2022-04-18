@@ -77,6 +77,10 @@
     -moz-transition: .5s all ease;
     transition: .5s all ease;
     }
+    #form-control {
+
+    }
+
 </style>
 
 <section id="navbar">
@@ -106,6 +110,11 @@
                     <li class="nav-item">
                         <a class="nav-link" href="/ads">Ads</a>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/editUser">Edit User</a>
+                    </li>
+
+
 <%--                    <li class="nav-item dropdown dmenu">--%>
 <%--                    </li>--%>
 <%--                    <li class="nav-item dropdown dmenu">--%>
@@ -121,7 +130,7 @@
 
                 </ul>
                 <form class="form-inline my-43 my-lg-0" action="/ads/searched" method="POST">
-                    <input class="form-control mr-sm-2" type="search" placeholder="Search" name="search" aria-label="Search">
+                    <input class="form-control mr-sm-8 mt-3" type="search" placeholder="Search" name="search" aria-label="Search">
                 </form>
             </div>
         </nav>

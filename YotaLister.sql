@@ -27,6 +27,7 @@ CREATE TABLE IF NOT EXISTS ads(
     user_id  INT UNSIGNED DEFAULT NULL,
     title VARCHAR(250) NOT NULL,
     description TEXT NOT NULL,
+    image         varchar(255),
     PRIMARY KEY (id),
     FOREIGN KEY (user_id) REFERENCES users (id)
 );
