@@ -1,40 +1,30 @@
+
+
 package dao;
 
 import models.Ad;
-import models.User;
 
 import java.sql.SQLException;
 import java.util.List;
 
 public interface Ads {
-    // get a list of all the ads
     List<Ad> all();
 
     long insert(Ad ad);
 
-    // insert a new ad and return the new ad's id
-    List<Ad>  findByTitle(String searched_ads);
-
-
-
+    Ad get(long i);
 
     Ad findById(long id);
 
-    public void editAd(String title, String description, Long newId);
-
-    public List<Ad> allForUser(User user);
-
-    //This is the void element associated with the DeleteAdServlet
-    Ad getAdById(long id);
-    void deleteAd(Ad ad);
-    Long delete(Long adId);
     List<Ad> allUserAds(long currentUserId);
-    Ad attainAdId(long id);
-    void delete(String id);
+
+    void delete(Long id);
+
     void edit( Ad newAd);
-    List<Ad> sortAds();
+
     List<Ad> sortAds(long id);
-    List<Ad> sortAdsAscending();
+
     List<Ad> sortAdsAscending(long id);
+
     List<Ad> searchAdsFromResults(String searchAds) throws SQLException;
 }

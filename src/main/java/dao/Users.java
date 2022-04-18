@@ -8,4 +8,6 @@ public interface Users {
     User findByUserId(Long id);
     Long insert(User user);
     void editProfile(String username, String password, long id);
+    boolean checkUsernameExists(String username);
+    void edit(String username, String newUsername, String newPassword);
 }
