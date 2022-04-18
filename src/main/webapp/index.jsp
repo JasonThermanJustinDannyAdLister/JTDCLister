@@ -129,7 +129,7 @@
         opacity: .8%;
         padding: 25px;
         position: fixed;
-        bottom: 0;
+        bottom: 60px;
         display: flex;
         color: white;
         width: 100%;
@@ -148,9 +148,14 @@
 </head>
 <body id="body">
 <jsp:include page="/WEB-INF/partials/navbar.jsp" />
-<div class="alert alert-success" role="alert">
+
+<div class="alert alert-success alert-dismissible fade show" role="alert">
+    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+        <span aria-hidden="true">×</span>
+    </button>
     <strong>Try This!</strong> 🎮  Insert Konami Code🎮
 </div>
+
 
 <div id="main_header" class="container-fluid ">
     <h1 class="#" style="font-family: 'Press Start 2P'">"Welcome to the Yota-Lister!"</h1>
@@ -216,9 +221,13 @@
     <p>MPG: Up to 27 city / 35 highway</p>
 </div>
 
-<div class="alert alert-success" role="alert">
+<div class="alert alert-success alert-dismissible fade show" role="alert">
+    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+        <span aria-hidden="true">×</span>
+    </button>
     <strong>Hey User,</strong> <a href="/register"> Register</a> Or <a href="/login"> Log In</a> to see all content!!
 </div>
+
 
 <br><br><br><br><br><br>
 <%--<img class="img-thumbnail" src="../img/cars.jpeg"  alt="Thumbnail image"><img class="img-thumbnail" src="../img/carr.mp4
