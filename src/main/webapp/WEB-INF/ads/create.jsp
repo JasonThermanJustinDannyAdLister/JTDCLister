@@ -56,15 +56,8 @@
         <div class="row gx-lg-5 align-items-center mb-5">
             <div class="col-lg-6 mb-5 mb-lg-0" style="z-index: 10">
                 <h1 class="my-5 display-5 fw-bold ls-tight" style="color: hsl(218, 81%, 95%)">
-                    The best offer <br />
-                    <span style="color: hsl(218, 81%, 75%)">for your business</span>
                 </h1>
-                <p class="mb-4 opacity-70" style="color: hsl(218, 81%, 85%)">
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                    Temporibus, expedita iusto veniam atque, magni tempora mollitia
-                    dolorum consequatur nulla, neque debitis eos reprehenderit quasi
-                    ab ipsum nisi dolorem modi. Quos?
-                </p>
+
             </div>
 
             <div class="col-lg-6 mb-5 mb-lg-0 position-relative">
@@ -86,14 +79,6 @@
                                 <label for="description">Description</label>
                                 <textarea id="description" name="description" class="form-control" type="text"></textarea>
                             </div>
-
-                            <!-- Checkbox -->
-<%--                            <div class="form-check d-flex justify-content-center mb-4">--%>
-<%--                                <input class="form-check-input me-2" type="checkbox" value="" style="margin-top: 15px" id="form2Example33" checked />--%>
-<%--                                <label class="form-check-label" for="form2Example33">--%>
-<%--                                    Subscribe to our newsletter--%>
-<%--                                </label>--%>
-<%--                            </div>--%>
 
                             <!-- Submit button -->
                             <input type="submit" class="btn btn-block btn-primary">
