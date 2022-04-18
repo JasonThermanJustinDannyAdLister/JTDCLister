@@ -18,10 +18,11 @@ public class Ad {
         this.image = image;
     }
 
-    public Ad(long userId, String title, String description) {
+    public Ad(long userId, String title, String description, String image) {
         this.userId = userId;
         this.title = title;
         this.description = description;
+        this.image = image;
         this.date_created = new Date(System.currentTimeMillis());
     }
 
