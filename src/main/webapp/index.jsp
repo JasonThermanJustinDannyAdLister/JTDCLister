@@ -133,7 +133,6 @@
             border: whitesmoke 7px;
         }
 
-    }
     .car-item {
     display: flex;
     flex-direction: column;
@@ -178,6 +177,7 @@
 }
 
     </style>
+    <title>YotaLister</title>
 </head>
 <body id="body">
 <jsp:include page="/WEB-INF/partials/navbar.jsp" />
