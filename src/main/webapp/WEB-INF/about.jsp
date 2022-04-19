@@ -1,4 +1,4 @@
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ page contentType="text/html;charset=UTF-8" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 
 <html>
@@ -27,7 +27,7 @@
             }
         }
 
-        #clicked {
+        #clicked, #clicked2, #clicked3, #clicked4 {
             padding-top: 1px;
             padding-bottom: 1px;
             text-align: center;
@@ -40,15 +40,9 @@
             border-radius: 13px
         }
 
-        #profile {
-            background-color: unset
-        }
-
         #post {
             margin: 10px;
-            padding: 6px;
-            padding-top: 2px;
-            padding-bottom: 2px;
+            padding: 2px 6px;
             text-align: center;
             background-color: #ecb21f;
             border-color: #a88734 #9c7e31 #846a29;
@@ -59,18 +53,12 @@
             width: 50%
         }
 
-
-        #nav-items li a,
-        #profile {
+        #nav-items li a {
             text-decoration: none;
             color: rgb(224, 219, 219);
             background-color: black
         }
 
-        .comments {
-            margin-top: 5%;
-            margin-left: 20px
-        }
 
         .darker {
             border: 1px solid seagreen;
@@ -117,9 +105,7 @@
             color: rgb(212, 208, 208)
         }
 
-        #align-form {
-            margin-top: 20px
-        }
+
 
         .form-group p a {
             color: white
@@ -158,7 +144,7 @@
         }
 
         h1 {
-
+        color: whitesmoke;
         }
 
         h1:hover {
@@ -176,6 +162,7 @@
 
         }
     </style>
+    <title>YotaLister</title>
 </head>
 <body style="background-color: cadetblue ">
 <jsp:include page="/WEB-INF/partials/navbar.jsp"/>
@@ -184,26 +171,22 @@
     <div class="carousel-inner" role="listbox">
         <div class="carousel-item active">
             <img class="d-block picture" src="https://ca.slack-edge.com/T029BRGN0-U02MN8EJRGW-36a7ee367d5a-512"
-                 alt="900x400" data-holder-rendered="true" ;
-                 height: 400px;">
+                 alt="900x400" data-holder-rendered="true">
         </div>
         <div class="carousel-item">
             <img class="d-block picture" src="https://ca.slack-edge.com/T029BRGN0-U02NJLUGJQY-5dc3c706fd6d-512"
                  data-src=url(https://ca.slack-edge.com/T029BRGN0-U02NJLUGJQY-5dc3c706fd6d-512) alt="900x400"
-                 data-holder-rendered="true" ;
-                 height: 400px;">
+                 data-holder-rendered="true">
         </div>
         <div class="carousel-item">
             <img class="d-block picture" src="https://ca.slack-edge.com/T029BRGN0-U02MUV5L150-39afa35a0e97-512"
                  data-src=url(https://ca.slack-edge.com/T029BRGN0-U02MUV5L150-39afa35a0e97-512) alt="900x400"
-                 data-holder-rendered="true" ;
-                 height: 400px;">
+                 data-holder-rendered="true">
         </div>
         <div class="carousel-item">
             <img class="d-block picture" src="https://ca.slack-edge.com/T029BRGN0-U02MNG37LVC-4982245c9a26-512"
                  data-src=url(https://ca.slack-edge.com/T029BRGN0-U02MNG37LVC-4982245c9a26-512) alt="900x400"
-                 data-holder-rendered="true" ;
-                 height: 400px;">
+                 data-holder-rendered="true">
         </div>
     </div>
     <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -215,7 +198,7 @@
         <span class="sr-only">Next</span>
     </a>
 </div>
-<h3 className='text-center display-4'>Portfolio</h3>
+<h3 className='text-center display-4'>Contact us here</h3>
 <div className="scroll-container">
     <div className="gridscroll">
     </div>
@@ -237,7 +220,7 @@
             aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation"><span
             class="navbar-toggler-icon"></span></button>
     <div class="end">
-        <div class="collapse navbar-collapse" id="navbarColor02">
+        <div class="collapse navbar-collapse" id="navbarColor01">
             <ul class="navbar-nav">
 
                 <li class="nav-item"><a class="nav-link" href="https://github.com/JMComstock" data-abc="true">Github</a>
@@ -245,7 +228,7 @@
                 <li class="nav-item "><a class="nav-link" href="https://www.linkedin.com/in/jasonmcomstock/"
                                          data-abc="true">Linkdein</a></li>
                 <li class="nav-item active"><a class="nav-link mt-2" href="https://www.linkedin.com/in/jasonmcomstock/"
-                                               data-abc="true" id="clicked">Contact<span
+                                               data-abc="true" id="clicked2">Contact<span
                         class="sr-only">(current)</span></a></li>
             </ul>
         </div>
@@ -270,7 +253,7 @@
                                          data-abc="true">Linkedin</a></li>
                 <li class="nav-item active"><a class="nav-link mt-2"
                                                href="https://www.linkedin.com/in/therman-haynes-4349b0198/"
-                                               data-abc="true" id="clicked">Contact<span
+                                               data-abc="true" id="clicked3">Contact<span
                         class="sr-only">(current)</span></a></li>
             </ul>
         </div>
@@ -285,7 +268,7 @@
             aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation"><span
             class="navbar-toggler-icon"></span></button>
     <div class="end">
-        <div class="collapse navbar-collapse" id="navbarColor02">
+        <div class="collapse navbar-collapse" id="navbarColor03">
             <ul class="navbar-nav">
                 <li class="nav-item"><a class="nav-link" href="#" data-abc="true"></a></li>
                 <li class="nav-item"><a class="nav-link" href="https://github.com/danielleturner"
@@ -294,7 +277,7 @@
                                          data-abc="true">Linkedin</a></li>
                 <li class="nav-item active"><a class="nav-link mt-2"
                                                href="https://www.linkedin.com/in/danielle-turner7/" data-abc="true"
-                                               id="clicked">Contact<span class="sr-only">(current)</span></a></li>
+                                               id="clicked4">Contact<span class="sr-only">(current)</span></a></li>
             </ul>
         </div>
     </div>
@@ -307,7 +290,7 @@
             aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation"><span
             class="navbar-toggler-icon"></span></button>
     <div class="end">
-        <div class="collapse navbar-collapse" id="navbarColor02">
+        <div class="collapse navbar-collapse" id="navbarColor04">
             <ul class="navbar-nav">
                 <li class="nav-item"><a class="nav-link" href="#" data-abc="true"></a></li>
                 <li class="nav-item"><a class="nav-link" href="https://github.com/jhconger" data-abc="true">Github</a>
