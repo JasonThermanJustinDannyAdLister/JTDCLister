@@ -17,24 +17,7 @@
             color: green;
             transition: ease-in-out 1ms;
         }
-        .img-thumbnail {
-            padding: 0.25rem;
-            background-color: #fff;
-            border: 1px solid #dee2e6;
-            border-radius: 0.25rem;
-            width: 150px;
-            height: 150px;
-            position: relative;
-            overflow: scroll;
-            overflow-y: hidden;
-        }
-        .scrollspy-example {
-            position: relative;
-            height: 200px;
-            margin-top: .5rem;
-            overflow: auto;
-            color: darkgreen;
-        }
+
         @media only screen and (max-width: 412px) {
             .jumbotron {
                 height: 450px;
@@ -43,21 +26,7 @@
                 overflow-x: scroll;
             }
         }
-        .gallery-container {
-            width: 100%;
-            height: 200px;
-            overflow-y: auto;
-        }
-        .gallery {
-            border: 1px solid black;
-            height: 200px;
-            width: 100%;
-            overflow-x: hidden;
-            overflow-y: scroll;
-        }
-        .thumbnails {
-            width: 100%;
-        }
+
         .gallery-container img {
             width: 200px;
             height: auto;
@@ -70,20 +39,7 @@
             border: 1px solid #ddd;
             margin: 1px;
         }
-        .scrollspy-example {
-            position: relative;
-            height: 200px;
-            margin-top: .5rem;
-            overflow: auto;
-            color: darkgreen;
-        }
-        .scrollspy-example-two {
-            position: relative;
-            height: 150px;
-            overflow-y: hidden;
-            overflow-x: scroll;
-            color: darkgreen;
-        }
+
         @media only screen and (max-width: 412px) {
             .jumbotron {
                 height: 450px;
